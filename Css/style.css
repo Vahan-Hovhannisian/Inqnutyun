@@ -282,42 +282,17 @@ a {
 }
 
 .button-header {
-  height: 40px;
-  border: none;
-  background-color: rgb(255, 255, 255);
+  display: block;
   background-color: #781214;
   color: #fff;
   font-size: 15px;
-  text-align: center;
   border-radius: 5px;
-  transition: all 0.5s;
   padding: 10px 20px;
-  cursor: pointer;
-}
+  transition: transform 0.4s;
 
-.button-header span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button-header span:after {
-  content: "\00bb";
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button-header:hover span {
-  padding-right: 25px;
-}
-
-.button-header:hover span:after {
-  opacity: 1;
-  right: 0;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .container-header {
