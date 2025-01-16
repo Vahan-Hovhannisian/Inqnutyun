@@ -1868,7 +1868,7 @@ swiper-container {
   letter-spacing: 0.649px;
 
   &::before {
-    content: url(../Img/logo.png);
+    content: url(../Img/Logo.png);
   }
 }
 
