@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ԻՆՔՆՈՒԹՅՈՒՆ</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!-- HEADER START -->
+    <header class="header">
+        <div class="container-header container">
+            <a class="logo" href="./index.html">
+                <img src="./Img/Logo.png" alt="Logo">
+                <strong class="logo-text">ԻՆՔՆՈՒԹՅՈՒՆ</strong>
+            </a>
+            <nav class="navbar">
+                <ul class="list-reset menu-ul-first">
+                    <li>
+                        <div class="menu-link-hover">
+                            <div class="videolibrary" onclick="myMenuFunction()">
+                                <a href="#" class="menu-link menu-link-videolibrary">ՏԵՍԱԴԱՐԱՆ
+                                    <i class="fa-solid fa-angle-down down"></i></a>
+                            </div>
+                            <ul class="videolibrary-content list-reset" id="videolibrary-content">
+                                <li><a href="gallery.html" class="videolibrary-services">ՃԱՆԱՉԵՆՔ ՀԱՅԱՍՏԱՆԸ</a></li>
+                                <li><a href="gallery.html" class="videolibrary-services">ԱՎԱՆԴՈՒՅԹՆԵՐ</a></li>
+                                <li><a href="gallery.html" class="videolibrary-services">ՊԱՏՄՈՒԹՅՈՒՆՆԵՐ</a></li>
+                                <li><a href="gallery.html" class="videolibrary-services">ԱԶԳԱՅԻՆ ԵՐԳ</a></li>
+                                <li><a href="gallery.html" class="videolibrary-services">ԱԶԳԱՅԻՆ ՊԱՐ</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="./fund.html">ՀԻՄՆԱԴՐԱՄ</a></li>
+                    <li><a href="./contact.html">ԿԱՊ</a></li>
+                </ul>
+            </nav>
+            <ul class="list-reset menu-ul">
+                <li>
+                    <div class="menu-link-hover">
+                        <div class="language" onclick="myLanguageFunction()">
+                            <a href="#" class="menu-link menu-link-language"><i class="fa-solid fa-globe"></i>
+                                <i class="fa-solid fa-angle-down down"></i></a>
+                        </div>
+                        <ul class="language-content list-reset" id="language-content">
+                            <li><a href="#" class="language-services">
+                                    <div class="flag-armenia"></div>
+                                </a></li>
+                            <li><a href="#" class="language-services">
+                                    <div class="flag-usa"></div>
+                                </a></li>
+                            <li><a href="#" class="language-services">
+                                    <div class="flag-russia"></div>
+                                </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button class="button-header">
+                        <a href="donation.html">
+                            <span>ՆՎԻՐԱԲԵՐԵԼ</span></a></button>
+                </li>
+            </ul>
+            <button class="burger">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main class="main">
+        <div class="main__overlay"></div>
+        <!-- START HERO SECTION -->
+        <section class="hero" style="background-image: url(Img/donationHeroImg.jpg);">
+            <div class="hero__container container">
+                <h1 class="hero__title">
+                    ՆՎԻՐԱԲԵՐՈՒԹՅՈՒՆ
+                </h1>
+                <div class="hero__links">
+                    <a class="hero__home-link" href="./index.html">
+                        Գլխավոր
+                    </a>
+                    <span class="hero__subtitle">
+                        Նվիրաբերություն
+                    </span>
+                </div>
+            </div>
+        </section>
+        <!-- END HERO SECTION -->
+
+        <!-- START DONATION SECTION -->
+        <section class="donation">
+            <div class="donation__container container">
+                <h2 class="donation__title">
+                    ԿԱՏԱՐԵԼ ՆՎԻՐԱՏՎՈՒԹՅՈՒՆ
+                </h2>
+                <div class="donation__wrapper">
+                    <form class="donation__form" action="#" method="post" enctype="multipart/form-data">
+                        <ul class="donation__list">
+                            <li class="donation__item">
+                                <button class="donation__coins" type="button">
+                                    RUB
+                                </button>
+                            </li>
+                            <li class="donation__item">
+                                <button class="donation__coins" type="button">
+                                    EUR
+                                </button>
+                            </li>
+                            <li class="donation__item">
+                                <button class="donation__coins" type="button">
+                                    AMD
+                                </button>
+                            </li>
+                            <li class="donation__item">
+                                <button class="donation__coins" type="button">
+                                    USD
+                                </button>
+                            </li>
+                        </ul>
+                        <input class="donation__input" type="number" required placeholder="Գումար">
+                        <div class="donation__name-email">
+                            <input class="donation__input donation__input__name" type="text" required
+                                placeholder="Անուն Ազգանուն">
+                            <input class="donation__input" type="text" required placeholder="Էլ, փոստ">
+                        </div>
+                        <div class="donation__card-transfer">
+                            <div class="donation__texts">
+                                <h3 class="donation__card-title">
+                                    Քարտային փոխանցում
+                                </h3>
+                                <p class="donation__card-text">
+                                    Վճարիր քո բանկային քարտով
+                                </p>
+                            </div>
+                            <div class="donation__cards">
+                                <img class="donation__img" src="Img/visa.png" alt="visa-card">
+                                <img class="donation__img" src="Img/mastercard.png" alt="mastercard-card">
+                                <img class="donation__img" src="Img/mastro.png" alt="maestro-card">
+                            </div>
+                        </div>
+                        <label class="donation__label">
+                            <input class="donation__card-number" type="number" required placeholder="Քարտային համար">
+                            <img class="donation__icon" src="Img/Card.png" alt="card">
+                        </label>
+                        <div class="donation__date-box">
+                            <label class="donation__label">
+                                <input class="donation__card-date" type="text" placeholder="MM/YY" required>
+                                <img class="donation__icon" src="Img/Calender.png" alt="calendar">
+                            </label>
+                            <label class="donation__label">
+                                <input class="donation__card-cvv" type="number" placeholder="CVV" required>
+                                <img class="donation__icon" src="Img/Lock.png" alt="lock">
+                            </label>
+                        </div>
+                        <div class="donation__buttons">
+                            <button class="donation__button-idram" type="button">
+                                <img class="donation__idram" src="Img/idram.png" alt="idBank">
+                                IDBank
+                            </button>
+                            <button class="donation__button-idram" type="button">
+                                <img class="donation__idram" src="Img/idram.png" alt="idram">
+                                idram
+                            </button>
+                        </div>
+                        <label class="donation__checkbox-label">
+                            <input class="donation__checkbox" type="checkbox" required>
+                            Բաժանորդագրվել որպես ԱՄԵՆԱՄՍՅԱ նվիրաբերող
+                        </label>
+                        <a class="donation__link" href="#" target="_blank">
+                            Գաղտնիության Քաղաքականություն
+                        </a>
+                        <a class="donation__link" href="#" target="_blank">
+                            Վճարման պայմանները
+                        </a>
+                        <button class="donation__submit-button" type="submit">
+                            ԿԱՏԱՐԵԼ ՆՎԻՐԱՏՎՈՒԹՅՈՒՆ
+                        </button>
+                    </form>
+                    <div class="donation__content">
+                        <span class="donation__bank">
+                            INECOBANK
+                        </span>
+                        <span class="donation__account">
+                            AMD 2052822317811001
+                        </span>
+                        <span class="donation__account">
+                            USD 2052822317811020
+                            <br>
+                            SWIFT CODE: INJSAM22
+                        </span>
+                        <span class="donation__account">
+                            EUR 2052822317811040
+                            <br>
+                            SWIFT CODE: INJSAM22
+                        </span>
+                        <span class="donation__account">
+                            RUB 2052822317811041
+                            <br>
+                            SWIFT CODE: INJSAM22
+                        </span>
+                        <span class="donation__idbank-account">
+                            «Այդի Բանկ» ՓԲԸ Հ/Հ՝ 11817094623000
+                        </span>
+                        <p class="donation__text">
+                            Մեծ նպատակի հասնելու համար պետք է սկսել փոքր քայլերից։ Սիրելի հայրենակից,
+                            մենք առաջնորդվում ենք հենց այդ սկզբունքով, և կատարելով նվիրատվություն՝ Դուք մասնակից եք
+                            դառնում Արարատյան արժեքների տարածմանը և հայ ազգային գաղափարախոսական ծրագրի և նպատակների
+                            իրագործմանը։Ձեր ներդրած յուրաքանչյուր դրամը մեծ նշանակություն ունի։ Այն օգտագործվում է մեր
+                            հռչակած կրթական և ռազմավարական ծրագրերի իրականացման, դրանց գործնականում կիրառության համար,
+                            ինչի մասին պարբերաբար հանդես ենք գալիս հաշվետվություններով։
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END DONATION SECTION -->
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER START -->
+    <footer class="footer">
+        <div class="container-footer container">
+            <div class="footer-content1">
+                <a href="./index.html">
+                    <div class="headerlogo"></div>
+                </a>
+                <div class="text footer-text">
+                    <p>Կարճ ինֆո այստեղ։ Eu egestas imperdiet consectetur egestas ante aliquet posuere vitae.</p>
+                </div>
+            </div>
+            <div class="footer-content2">
+                <h3 class="footer-title">ՀԻՄՆԱԴՐԱՄ</h3>
+                <ul class="list-reset">
+                    <li class="footer-lists"><a href="#">ՄԵՐ ՄԱՍԻՆ</a></li>
+                    <li class="footer-lists"><a href="#">ԽՆԴԻՐԸ</a></li>
+                    <li class="footer-lists"><a href="#">ՀՈԳԱԲԱՐՁՈՒՆԵՐԻ ԽՈՐՀՈՒՐԴ</li>
+                    <li class="footer-lists"><a href="#">ԹԻՄԸ</a></li>
+                    <li class="footer-lists"><a href="#">ԱՋԱԿԻՑՆԵՐ</a></li>
+                    <li class="footer-lists"><a href="#">ՆԱԽԱԳԻԾ</a></li>
+                </ul>
+            </div>
+            <div class="footer-content2">
+                <h3 class="footer-title">ՏԵՍԱԴԱՐԱՆ</h3>
+                <ul class="list-reset">
+                    <li class="footer-lists"><a href="#">ՃԱՆԱՉԵՆՔ ՀԱՅԱՍՏԱՆԸ</a></li>
+                    <li class="footer-lists"><a href="#">ԱՎԱՆԴՈՒՅԹՆԵՐ</a></li>
+                    <li class="footer-lists"><a href="#">ՊԱՏՄՈՒԹՅՈՒՆՆԵՐ</a></li>
+                    <li class="footer-lists"><a href="#">ԱԶԳԱՅԻՆ ԵՐԳ</a></li>
+                    <li class="footer-lists"><a href="#">ԱԶԳԱՅԻՆ ՊԱՐ</a></li>
+                </ul>
+            </div>
+            <div class="footer-content2">
+                <h3 class="footer-title">ԿԱՊ</h3>
+                <ul class="list-reset list-reset-button">
+                    <a href="tel:+374-00-00-00" class="button  phone">+374-00-00-00</a>
+                    <a href="mailto:gagikidentity@gmail.com" class="button  email">gagikidentity@gmail.com</a>
+                    <a href="#" class="button  location">RA, Yerevan, Road 00</a>
+                    <div class="footer-icons">
+                        <div class="social-icons"><a href="https://x.com/?lang=ru" target="_blank"><i
+                                    class="fa-brands fa-x-twitter"></i></a></div>
+                        <div class="social-icons"><a href="https://www.instagram.com/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></i></a></div>
+                        <div class="social-icons"><a href="https://www.facebook.com/identity.armenia/?_rdr"
+                                target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+                        <div class="social-icons"><a
+                                href="https://www.linkedin.com/login/ru?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
+                                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                    </div>
+                </ul>
+            </div>
+            <div class="footer-content2">
+                <h3 class="footer-title">ԲԱԺԱՆԱՐԴԱԳՐՈՒԹՅՈՒՆ</h3>
+                <ul class="list-reset ">
+                    <p>Ստացեք հիմնադրամի նորությունները և նախագծի կարևոր թարմացումներն էլ-փոստով</p>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="footerform">
+                        <input type="hidden" name="access_key" value="53a3c34a-18a5-4ba3-9c27-eef8b72864af">
+                        <input type="email" name="email" placeholder="էլ-փոստ" class="emailinput" required>
+                        <button type="submit" class="subscribe-button">ԲԱԺԱՆՈՐԴԱԳՐՎԵԼ</button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="container-deepfooter container">
+            <p>© «Ինքնություն», Հիմնադրամ <span class="copyright" id="copyright"></span></p>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>

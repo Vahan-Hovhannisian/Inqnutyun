@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>ԻՆՔՆՈՒԹՅՈՒՆ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./videotube/videotube.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-header container">
+            <a class="logo" href="./index.html">
+                <img src="./Img/Logo.png" alt="Logo">
+                <strong class="logo-text">ԻՆՔՆՈՒԹՅՈՒՆ</strong>
+            </a>
+            <nav class="navbar">
+                <ul class="list-reset menu-ul-first">
+                    <li>
+                        <div class="menu-link-hover">
+                            <div class="videolibrary" onclick="myMenuFunction()">
+                                <a href="#" class="menu-link menu-link-videolibrary">ՏԵՍԱԴԱՐԱՆ
+                                    <i class="fa-solid fa-angle-down down"></i></a>
+                            </div>
+                            <ul class="videolibrary-content list-reset" id="videolibrary-content">
+                                <li><a href="gallery.html" class="videolibrary-services">ՃԱՆԱՉԵՆՔ ՀԱՅԱՍՏԱՆԸ</a></li>
+                                <li><a href="gallery.html" class="videolibrary-services">ԱՎԱՆԴՈՒՅԹՆԵՐ</a></li>
+                                <li><a href="gallery.html" class="videolibrary-services">ՊԱՏՄՈՒԹՅՈՒՆՆԵՐ</a></li>
+                                <li><a href="gallery.html" class="videolibrary-services">ԱԶԳԱՅԻՆ ԵՐԳ</a></li>
+                                <li><a href="gallery.html" class="videolibrary-services">ԱԶԳԱՅԻՆ ՊԱՐ</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#" class=" menu-active">ՀԻՄՆԱԴՐԱՄ</a></li>
+                    <li><a href="./contact.html">ԿԱՊ</a></li>
+                </ul>
+            </nav>
+            <ul class="menu-ul">
+                <li>
+                    <div class="menu-link-hover">
+                        <div class="language" onclick="myLanguageFunction()">
+                            <a href="#" class="menu-link menu-link-language"><i class="fa-solid fa-globe"></i>
+                                <i class="fa-solid fa-angle-down down"></i></a>
+                        </div>
+                        <ul class="language-content list-reset" id="language-content">
+                            <li><a href="#" class="language-services">
+                                    <div class="flag-armenia"></div>
+                                </a></li>
+                            <li><a href="#" class="language-services">
+                                    <div class="flag-usa"></div>
+                                </a></li>
+                            <li><a href="#" class="language-services">
+                                    <div class="flag-russia"></div>
+                                </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><button class="button-header"><a href="donation.html"><span>ՆՎԻՐԱԲԵՐԵԼ</span></a></button></li>
+            </ul>
+            <button class="burger">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
+        </div>
+    </header>
+    <div class="contacticons">
+        <div class="twitter"><a href="https://x.com/?lang=ru" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <div class="instagram"><a href="https://www.instagram.com/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="facebook"><a href="https://www.facebook.com/identity.armenia/?_rdr" target="_blank"><i
+                    class="fa-brands fa-facebook"></i></a></div>
+        <div class="linkedin"><a
+                href="https://www.linkedin.com/login/ru?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
+                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+    </div>
+    <main class="main">
+        <div class="main__overlay"></div>
+        <section class="fund-section1">
+            <div class="fund-section1container container">
+                <h2>ՀԻՄՆԱԴՐԱՄ</h2>
+                <div class="fund">
+                    <ul class="fund-ul list-reset">
+                        <li> <a href="./index.html">Գլխավոր <i class="fa-solid fa-chevron-right"></i> </a></li>
+                    </ul>
+                    <ul class="fund-ul-fund list-reset">
+                        <li> <a href="#"> Հիմնադրամ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="fund-section2">
+            <div class="fund-section2container container">
+                <div id="fund-section2-tabbed">
+
+                    <input type="radio" id="fundtab1" name="css-tabs" checked>
+                    <input type="radio" id="fundtab2" name="css-tabs">
+                    <input type="radio" id="fundtab3" name="css-tabs">
+
+                    <ul class="fundtabs" id="fundtabs">
+                        <li class="fundtab"><label for="fundtab1">Հիմնադրամի մասին</label></li>
+                        <li class="fundtab"><label for="fundtab2">Թարմացումներ</label></li>
+                        <li class="fundtab"><label for="fundtab3">Հաշվետվություններ</label></li>
+                    </ul>
+                    <div class="aboutfund">
+                        <div id="menufund">
+                            <input type="radio" id="menufundtab1" name="menu-css-tabs" checked>
+                            <input type="radio" id="menufundtab2" name="menu-css-tabs">
+                            <input type="radio" id="menufundtab3" name="menu-css-tabs">
+                            <input type="radio" id="menufundtab4" name="menu-css-tabs">
+                            <input type="radio" id="menufundtab5" name="menu-css-tabs">
+                            <input type="radio" id="menufundtab6" name="menu-css-tabs">
+                            <button class="main__btn hidden" type="button">&#10095;</button>
+                            <ul class="menufundul" id="menufundul">
+                                <li data-goto="fund-tab-content-information-about" class="main__item menufundtab"><label
+                                        for="menufundtab1">ՄԵՐ ՄԱՍԻՆ</label></li>
+                                <li data-goto="fund-tab-content-information-problem" class="main__item menufundtab">
+                                    <label for="menufundtab2">ԽՆԴԻՐԸ</label>
+                                </li>
+                                <li data-goto="fund-tab-content-information-boardoftrustees"
+                                    class="main__item menufundtab"><label for="menufundtab3">ՀՈԳԱԲԱՐՁՈՒՆԵՐԻ
+                                        ԽՈՐՀՈՒՐԴ</label></li>
+                                <li data-goto="fund-tab-content-information-team" class="main__item menufundtab"><label
+                                        for="menufundtab4">ԹԻՄԸ</label></li>
+                                <li data-goto="fund-tab-content-information-supporters" class="main__item menufundtab">
+                                    <label for="menufundtab5">ԱՋԱԿԻՑՆԵՐ</label>
+                                </li>
+                                <li data-goto="fund-tab-content-information-project" class="main__item menufundtab">
+                                    <label for="menufundtab6">ՆԱԽԱԳԻԾ</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="fund-section2-text">
+                            <div id="fund-tabbed" class="fund-tabbed">
+                                <div class="fund-tab-content1">
+                                    <div class="fund-tab-content-information">
+                                        <h3 id="fund-tab-content-information-about">ՄԵՐ ՄԱՍԻՆ</h3>
+                                        <a class="fund-logo-link" href="./index.html">
+                                            <img class="fund-logo" src="Img/Logo.png" alt="Logo">
+                                            <strong class="fund-logo-text">
+                                                ԻՆՔՆՈՒԹՅՈՒՆ
+                                            </strong>
+                                            <span class="fund-logo-span">
+                                                ՀԻՄՆԱԴՐԱՄ
+                                            </span>
+                                        </a>
+                                        <p class="fund-text">
+                                            <span class="fund-text-span">
+                                                Նպատակ.
+                                            </span>
+                                            Ազգային արժեքների տարածում
+                                        </p>
+                                        <p class="fund-text">
+                                            <span class="fund-text-span">
+                                                Գործիքներ.
+                                            </span>
+                                            Ժամանակակից մեդիա նախագծեր
+                                        </p>
+                                        <p class="fund-text">
+                                            <span class="fund-text-span">
+                                                Թիմ.
+                                            </span>
+                                            Փորձառու մասնագետներ
+                                        </p>
+                                        <p class="fund-large-text">
+                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                            non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                            laborum."
+                                            This classic filler text, known as "Lorem Ipsum," is used as placeholder
+                                            text in design and publishing.
+                                        </p>
+                                    </div>
+                                    <div class="fund-tab-content-information">
+                                        <h3 id="fund-tab-content-information-problem">
+                                            հոգաբարձուների Խորհուրդ
+                                        </h3>
+                                        <ul class="fund-tab-content-information-list">
+                                            <li class="fund-tab-content-information-list-item">
+                                                <img class="fund-tab-content-information-list-img"
+                                                    src="Img/Սևակ-Խաչատրյան.png" alt="specialists">
+                                                <span class="fund-tab-content-information-list-name">
+                                                    Սևակ Խաչատրյան
+                                                </span>
+                                                <p class="fund-tab-content-information-list-position">
+                                                    Հոգաբարձուների խորհրդի նախագահ
+                                                </p>
+                                                <p class="fund-tab-content-information-list-text">
+                                                    «Արցախ Կարպետ» ընկերության հիմնադիր
+                                                </p>
+                                            </li>
+                                            <li class="fund-tab-content-information-list-item">
+                                                <img class="fund-tab-content-information-list-img"
+                                                    src="Img/Տեր-Աբել-քահանա-Քարտաշյան.png" alt="specialists">
+                                                <span class="fund-tab-content-information-list-name">
+                                                    Տեր Աբել քահանա Քարտաշյան
+                                                </span>
+                                                <p class="fund-tab-content-information-list-position">
+                                                    Խորհրդի անդամ
+                                                </p>
+                                                <p class="fund-tab-content-information-list-text">
+                                                    Իջևանի Սուրբ Ամենափրկիչ եկեղեցու հոգևոր հովիվ
+                                                </p>
+                                            </li>
+                                            <li class="fund-tab-content-information-list-item">
+                                                <img class="fund-tab-content-information-list-img"
+                                                    src="Img/Անի-Մանուկյան.png" alt="specialists">
+                                                <span class="fund-tab-content-information-list-name">
+                                                    Անի Մանուկյան
+                                                </span>
+                                                <p class="fund-tab-content-information-list-position">
+                                                    Խորհրդի անդամ
+                                                </p>
+                                                <p class="fund-tab-content-information-list-text">
+                                                    Ֆրանսիայում «Արմատ» կրթօջախի հիմնադիր
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <ul class="fund-tab-content-information-list">
+                                            <li class="fund-tab-content-information-list-item">
+                                                <img class="fund-tab-content-information-list-img"
+                                                    src="Img/Հասմիկ-Բաղդասարյան.png" alt="specialists">
+                                                <span class="fund-tab-content-information-list-name">
+                                                    Հասմիկ Բաղդասարյան-Դոլուխանյան
+                                                </span>
+                                                <p class="fund-tab-content-information-list-position">
+                                                    Խորհրդի անդամ
+                                                </p>
+                                                <p class="fund-tab-content-information-list-text">
+                                                    Երգչուհի (սոպրանո)
+                                                </p>
+                                            </li>
+                                            <li class="fund-tab-content-information-list-item">
+                                                <img class="fund-tab-content-information-list-img"
+                                                    src="Img/Արման-Դավթյան.png" alt="specialists">
+                                                <span class="fund-tab-content-information-list-name">
+                                                    Արման Դավթյան (Նուռ)
+                                                </span>
+                                                <p class="fund-tab-content-information-list-position">
+                                                    Խորհրդի անդամ
+                                                </p>
+                                                <p class="fund-tab-content-information-list-text">
+                                                    «Նուռ Դիզայն» ստեղծագործական ստուդիայի և «Նուռ Արթ Գալլերի» (Nur
+                                                    Art
+                                                    Gallery Yerevan) ցուցասրահի հիմնադիր
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="fund-tab-content-information">
+                                        <h3 id="fund-tab-content-information-team">ԹԻՄԸ</h3>
+                                        <div class="fund-tab-content-information-wrapper">
+                                            <div class="fund-tab-content-information-wrapper-item">
+                                                <ul class="fund-tab-content-information-wrapper-list fund-first-list">
+                                                    <li class="fund-tab-content-information-wrapper-list-item">
+                                                        <img class="fund-tab-content-information-wrapper-list-item-img"
+                                                            src="Img/Գագիկ-Հարությունյան.png" alt="specialists">
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-name">
+                                                            Գագիկ Հարությունյան
+                                                        </span>
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-position">
+                                                            Հիմնադիր, տնօրեն
+                                                        </span>
+                                                    </li>
+                                                    <li class="fund-tab-content-information-wrapper-list-item">
+                                                        <img class="fund-tab-content-information-wrapper-list-item-img"
+                                                            src="Img/Առնոլդ-Ղազարյան.png" alt="specialists">
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-name">
+                                                            Առնոլդ Ղազարյան
+                                                        </span>
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-position">
+                                                            Օպերատոր
+                                                        </span>
+                                                    </li>
+                                                    <li class="fund-tab-content-information-wrapper-list-item">
+                                                        <img class="fund-tab-content-information-wrapper-list-item-img"
+                                                            src="Img/Մարիամ-Բաղդասարյան.png" alt="specialists">
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-name">
+                                                            Մարիամ Բաղդասարյան
+                                                        </span>
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-position">
+                                                            Մոնտաժող
+                                                        </span>
+                                                    </li>
+                                                    <li class="fund-tab-content-information-wrapper-list-item">
+                                                        <img class="fund-tab-content-information-wrapper-list-item-img"
+                                                            src="Img/Կարեն-Հարությունյան.png" alt="specialists">
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-name">
+                                                            Կարեն Հարությունյան
+                                                        </span>
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-position">
+                                                            Ծրագրավորող
+                                                        </span>
+                                                    </li>
+                                                    <li class="fund-tab-content-information-wrapper-list-item">
+                                                        <img class="fund-tab-content-information-wrapper-list-item-img"
+                                                            src="Img/Պավել-Տերտերյան.png" alt="specialists">
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-name">
+                                                            Պավել Տերտերյան
+                                                        </span>
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-position">
+                                                            Մոնտաժող
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="fund-tab-content-information-wrapper-item">
+                                                <ul class="fund-tab-content-information-wrapper-list">
+                                                    <li class="fund-tab-content-information-wrapper-list-item">
+                                                        <img class="fund-tab-content-information-wrapper-list-item-img"
+                                                            src="Img/Գայանե-Հարությունյան.png" alt="specialists">
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-name">
+                                                            Գայանե Հարությունյան
+                                                        </span>
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-position">
+                                                            Թարգմանիչ
+                                                        </span>
+                                                    </li>
+                                                    <li class="fund-tab-content-information-wrapper-list-item">
+                                                        <img class="fund-tab-content-information-wrapper-list-item-img"
+                                                            src="Img/Նելսոն-Ասլանյան.png" alt="specialists">
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-name">
+                                                            Նելսոն Ասլանյան
+                                                        </span>
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-position">
+                                                            Օպերատոր
+                                                        </span>
+                                                    </li>
+                                                    <li class="fund-tab-content-information-wrapper-list-item">
+                                                        <img class="fund-tab-content-information-wrapper-list-item-img"
+                                                            src="Img/Լուսինե-Գրիգորյան.png" alt="specialists">
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-name">
+                                                            Լուսինե Գրիգորյան
+                                                        </span>
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-position">
+                                                            Թարգմանիչ
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="fund-tab-content-information-wrapper-item">
+                                                <ul class="fund-tab-content-information-wrapper-list fund-last-list">
+                                                    <li class="fund-tab-content-information-wrapper-list-item">
+                                                        <img class="fund-tab-content-information-wrapper-list-item-img"
+                                                            src="Img/Լենա-Թաթևոսյան.png" alt="specialists">
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-name">
+                                                            Լենա Թաթևոսյան
+                                                        </span>
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-position">
+                                                            Կամավոր
+                                                        </span>
+                                                    </li>
+                                                    <li class="fund-tab-content-information-wrapper-list-item">
+                                                        <img class="fund-tab-content-information-wrapper-list-item-img"
+                                                            src="Img/Արմինե-Գրիգորյան.png" alt="specialists">
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-name">
+                                                            Արմինե Գրիգորյան
+                                                        </span>
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-position">
+                                                            Դիզայներ
+                                                        </span>
+                                                    </li>
+                                                    <li class="fund-tab-content-information-wrapper-list-item">
+                                                        <img class="fund-tab-content-information-wrapper-list-item-img"
+                                                            src="Img/Վարդուհի-Հարությունյան.png" alt="specialists">
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-name">
+                                                            Վարդուհի Հարությունյան
+                                                        </span>
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-position">
+                                                            Դիզայներ
+                                                        </span>
+                                                    </li>
+                                                    <li class="fund-tab-content-information-wrapper-list-item">
+                                                        <img class="fund-tab-content-information-wrapper-list-item-img"
+                                                            src="Img/Ռուզան-Խաչատրյան.png" alt="specialists">
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-name">
+                                                            Ռուզան Խաչատրյան
+                                                        </span>
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-position">
+                                                            Ռեժիսոր
+                                                        </span>
+                                                    </li>
+                                                    <li class="fund-tab-content-information-wrapper-list-item">
+                                                        <img class="fund-tab-content-information-wrapper-list-item-img"
+                                                            src="Img/Փառանձեմ-Մանուկյան.png" alt="specialists">
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-name">
+                                                            Փառանձեմ Մանուկյան
+                                                        </span>
+                                                        <span
+                                                            class="fund-tab-content-information-wrapper-list-item-position">
+                                                            Կամավոր
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fund-tab-content-information">
+                                        <h3 id="fund-tab-content-information-supporters">ԱՋԱԿԻՑՆԵՐ</h3>
+                                        <ul class="fund-tab-content-information-supporters-list">
+                                            <li class="fund-tab-content-information-supporters-item">
+                                                <img class="fund-tab-content-information-supporters-img"
+                                                    src="Img/Շվեյցարական-համագործակցություն.png" alt="company">
+                                                <p class="fund-tab-content-information-supporters-text">
+                                                     Շվեյցարական համագործակցության գրասենյակն աջակցում է «ռեԱրմենիա
+                                                    ակադեմիա»-ի միջոցով 
+                                                </p>
+                                            </li>
+                                            <li class="fund-tab-content-information-supporters-item">
+                                                <img class="fund-tab-content-information-supporters-img"
+                                                    src="Img/WelcomeToIt.png" alt="company">
+                                                <p class="fund-tab-content-information-supporters-text">
+                                                    Welcome to it ընկերությունը անվճար կայքը պատրաստելու
+                                                    պատրաստակամություն է հայտնել 
+                                                </p>
+                                            </li>
+                                            <li class="fund-tab-content-information-supporters-item">
+                                                <img class="fund-tab-content-information-supporters-img"
+                                                    src="Img/Printhouse.png" alt="company">
+                                                <p class="fund-tab-content-information-supporters-text">
+                                                     Printhouse1 կազմակերպությունը նախագծին աջակցում է տպագրական
+                                                    գործերում 
+                                                </p>
+                                            </li>
+                                            <li class="fund-tab-content-information-supporters-item">
+                                                <img class="fund-tab-content-information-supporters-img"
+                                                    src="Img/Մարզերի-երեխաները-մարզերում-ՀԿ-ի.png" alt="company">
+                                                <p class="fund-tab-content-information-supporters-text">
+                                                     Մարզերի երեխաները մարզերում ՀԿ-ի կամավորները օգնում են ընթացիկ
+                                                    գործերում 
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <ul class="fund-tab-content-information-supporters-team-list">
+                                            <li class="fund-tab-content-information-supporters-team-item">
+                                                <img class="fund-tab-content-information-supporters-team-img"
+                                                    src="Img/Դավիթ-Հակոբյան.png" alt="specialists">
+                                                <span class="fund-tab-content-information-supporters-team-name">
+                                                    Դավիթ Հակոբյան
+                                                </span>
+                                            </li>
+                                            <li class="fund-tab-content-information-supporters-team-item">
+                                                <img class="fund-tab-content-information-supporters-team-img"
+                                                    src="Img/Տիգրան-Ներսիսյան.png" alt="specialists">
+                                                <span class="fund-tab-content-information-supporters-team-name">
+                                                    Տիգրան Ներսիսյան
+                                                </span>
+                                            </li>
+                                            <li class="fund-tab-content-information-supporters-team-item">
+                                                <img class="fund-tab-content-information-supporters-team-img"
+                                                    src="Img/Արման-Նավասարդյան.png" alt="specialists">
+                                                <span class="fund-tab-content-information-supporters-team-name">
+                                                    Արման Նավասարդյան
+                                                </span>
+                                            </li>
+                                            <li class="fund-tab-content-information-supporters-team-item">
+                                                <img class="fund-tab-content-information-supporters-team-img"
+                                                    src="Img/Դավիթ-Ամալյան.png" alt="specialists">
+                                                <span class="fund-tab-content-information-supporters-team-name">
+                                                    Դավիթ Ամալյան
+                                                </span>
+                                            </li>
+                                            <li class="fund-tab-content-information-supporters-team-item">
+                                                <img class="fund-tab-content-information-supporters-team-img"
+                                                    src="Img/Գուրգեն-Մելիքյան.png" alt="specialists">
+                                                <span class="fund-tab-content-information-supporters-team-name">
+                                                    Գուրգեն Մելիքյան
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <div class="fund-tab-content-information-supporters-info">
+                                            <img class="fund-tab-content-information-supporters-info-img"
+                                                src="Img/Գագիկ-Գինոսյանը.png" alt="specialists">
+                                            <div class="fund-tab-content-information-supporters-info-text-box">
+                                                <p class="fund-tab-content-information-supporters-info-text">
+                                                    <span
+                                                        class="fund-tab-content-information-supporters-info-text-name">
+                                                        Գագիկ Գինոսյանը
+                                                    </span>
+                                                    միացավ նախագծին կյանքի վերջին ամիսներին: Ի հիշատակ Գինոսյանի՝ նրա
+                                                    հետ միասին կազմած ծրագրերը իրականացնելու ենք ավելի բարձր
+                                                    պատասխանատվությամբ:
+                                                </p>
+                                                <p class="fund-tab-content-information-supporters-info-text-red">
+                                                    Ազգագրական պարերի մասին պատրաստելու ե﻿նք ուսուցողական հոլովակներ,
+                                                    որպեսզի ցանկացած հայ աշխարհի յուրաքանչյուր կետից իր ուզած պարը
+                                                    հեշտությամբ գտնելու և սովորելու հնարավորություն ունենա։
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fund-tab-content-information">
+                                        <h3 id="fund-tab-content-information-project">ՆԱԽԱԳԻԾ</h3>
+                                        <p class="fund-tab-content-information-text">
+                                            Թեմատիկ տեսանյութեր նկարահանելով եվ տարածելով
+                                        </p>
+                                        <p class="fund-tab-content-information-text-red">
+                                            նպաստում ենք հայ մշակույթի տարածմանը
+                                        </p>
+                                        <img class="fund-tab-content-information-img" src="Img/նախագիծImg.png"
+                                            alt="project">
+                                        <ul class="fund-tab-content-information-list-way">
+                                            <li class="fund-tab-content-information-item-way">
+                                                <span class="fund-tab-content-information-before-title">
+                                                    Ինչո՞ւ
+                                                </span>
+                                                <h3 class="fund-tab-content-information-title">
+                                                    Մշակույթ
+                                                </h3>
+                                                <p class="fund-tab-content-information-after-text">
+                                                    Մշակույթը ձևավորում է ազգի ինքնությունը
+                                                </p>
+                                            </li>
+                                            <li class="fund-tab-content-information-item-way">
+                                                <span class="fund-tab-content-information-before-title">
+                                                    Ինչո՞ւ
+                                                </span>
+                                                <h3 class="fund-tab-content-information-title">
+                                                    ՏԵՍԱՆՅՈՒԹԵՐ
+                                                </h3>
+                                                <p class="fund-tab-content-information-after-text">
+                                                    Տեսանյութերը մշակույթի տարածման ամենաարդյունավետ միջոցն են
+                                                </p>
+                                            </li>
+                                            <li class="fund-tab-content-information-item-way">
+                                                <span class="fund-tab-content-information-before-title">
+                                                    Ինչո՞ւ
+                                                </span>
+                                                <h3 class="fund-tab-content-information-title">
+                                                    ՄԵՆՔ
+                                                </h3>
+                                                <p class="fund-tab-content-information-after-text">
+                                                    Մենք ունենք անհրաժեշտ փորձն ու որոշել ենք նվիրվել այս գործին 
+                                                </p>
+                                            </li>
+                                            <li class="fund-tab-content-information-item-way">
+                                                <span class="fund-tab-content-information-before-title">
+                                                    Ինչո՞ւ
+                                                </span>
+                                                <h3 class="fund-tab-content-information-title">
+                                                    ՀԻՄԱ
+                                                </h3>
+                                                <p class="fund-tab-content-information-after-text">
+                                                    Մեր ինքնությունը հերթական անգամ վտանգված է
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <p class="fund-tab-content-information-text">
+                                            ՄԵՐ ԻՆՔՆՈՒԹՅՈՒՆԸ ՀԵՐԹԱԿԱՆ ԱՆԳԱՄ ՎՏԱՆԳՎԱԾ Է,
+                                            Որովհետև հեռացել ենք մեր մշակույթից
+                                        </p>
+                                        <ul class="fund-tab-content-information-list-logo">
+                                            <li class="fund-tab-content-information-item-logo">
+                                                <p class="fund-tab-content-information-item-logo-text">
+                                                    Չգիտենք մեր պատմությունն ու ավանդույթները
+                                                </p>
+                                            </li>
+                                            <li class="fund-tab-content-information-item-logo">
+                                                <p class="fund-tab-content-information-item-logo-text">
+                                                    Աղավաղում ենք լեզուն
+                                                </p>
+                                            </li>
+                                            <li class="fund-tab-content-information-item-logo">
+                                                <p class="fund-tab-content-information-item-logo-text">
+                                                    Մեր միջոցառումներին պարում ենք քրդական պարեր
+                                                </p>
+                                            </li>
+                                            <li class="fund-tab-content-information-item-logo">
+                                                <p class="fund-tab-content-information-item-logo-text">
+                                                    Լսում ենք մակերեսային արաբաթուրքական երաժշտություն
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <p class="fund-tab-content-information-text-border">
+                                            Ինքնությունը պահելու լավագույն ձևը դրա լիարժեք կրողը դառնալն է:
+                                        </p>
+                                        <h3 class="fund-tab-content-information-project-black">
+                                            ՄԵՐ ԱՆԵԼԻՔԸ
+                                        </h3>
+                                        <div class="fund-tab-content-information-text-logo-box">
+                                            <p class="fund-tab-content-information-text-black">
+                                                Ստեղծում ենք բարձրորակ տեսանյութեր և տարածում տարբեր մեդիա հարթակներով
+                                            </p>
+                                            <p class="fund-tab-content-information-text-black">
+                                                Մասնագիտացված թվային գործիքներով չափում ենք տարածման ազդեցությունը
+                                            </p>
+                                        </div>
+                                        <p class="fund-tab-content-information-text-red-bg">
+                                            Ձեր նվիրաբերության շնորհիվ կստեղծվի մնայուն ժառանգություն հաջորդ սերունդների
+                                            համար։
+                                        </p>
+                                        <h3 class="fund-tab-content-information-project-black">
+                                            ԹԵՄԱՆԵՐ
+                                        </h3>
+                                        <ul class="fund-tab-content-information-list-bottom">
+                                            <li class="fund-tab-content-information-item-bottom">
+                                                <h3 class="fund-tab-content-information-title">
+                                                    մշակութային հուշարձաններ՝
+                                                </h3>
+                                                <p class="fund-tab-content-information-text-bottom">
+                                                    բերդեր, խաչքարեր
+                                                </p>
+                                            </li>
+                                            <li class="fund-tab-content-information-item-bottom">
+                                                <h3 class="fund-tab-content-information-title">
+                                                    վանքեր եվ
+                                                </h3>
+                                                <p class="fund-tab-content-information-text-bottom">
+                                                </p>
+                                            </li>
+                                            <li class="fund-tab-content-information-item-bottom">
+                                                <h3 class="fund-tab-content-information-title">
+                                                    պատմություն
+                                                </h3>
+                                                <p class="fund-tab-content-information-text-bottom">
+                                                    Դեպքեր,անձեր,
+                                                    վերլուծություն
+                                                </p>
+                                            </li>
+                                            <li class="fund-tab-content-information-item-bottom">
+                                                <h3 class="fund-tab-content-information-title">
+                                                    ԱԶԳԱԳՐՈՒԹՅՈՒՆ
+                                                </h3>
+                                                <p class="fund-tab-content-information-text-bottom">
+                                                    Երգ,պար,
+                                                    երաժշտություն
+                                                </p>
+                                            </li>
+                                            <li class="fund-tab-content-information-item-bottom">
+                                                <h3 class="fund-tab-content-information-title">
+                                                    ԱՎԱՆԴՈՒՅԹՆԵՐ
+                                                </h3>
+                                                <p class="fund-tab-content-information-text-bottom">
+                                                    Տոներ, ծեսեր, խաղեր
+                                                </p>
+                                            </li>
+                                            <li class="fund-tab-content-information-item-bottom">
+                                                <h3 class="fund-tab-content-information-title">
+                                                    ՀԱՄԱՅՆՔՆԵՐ
+                                                </h3>
+                                                <p class="fund-tab-content-information-text-bottom">
+                                                    Ապրելակերպ, տեսարժան վայրեր
+                                                </p>
+                                            </li>
+                                            <li class="fund-tab-content-information-item-bottom">
+                                                <h3 class="fund-tab-content-information-title">
+                                                    ԱՐՑԱԽՈԻՄ
+                                                </h3>
+                                                <p class="fund-tab-content-information-text-bottom">
+                                                    մեր թիմի անդամների կողմից նկարահանած և դաշտում առկա տեսանյութերի
+                                                    հավաքագրում,
+                                                    մշակում և ներկայացում։ 
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <p class="fund-tab-content-information-text-border">
+                                            Ստեղծված տեսանյութերը թարգմանելու և տարածելու ենք մի քանի լեզուներով։
+                                        </p>
+                                        <div class="fund-tab-content-information-box">
+                                            <div class="fund-tab-content-information-img-box">
+                                                <img class="fund-tab-content-information-bottom-img"
+                                                    src="img/ԹԵՄԱՆԵՐImg1.png" alt="group img">
+                                                <img class="fund-tab-content-information-bottom-img"
+                                                    src="img/ԹԵՄԱՆԵՐImg3.png" alt="group img">
+                                            </div>
+                                            <img class="fund-tab-content-information-bottom-img"
+                                                src="img/ԹԵՄԱՆԵՐImg2.png" alt="group img">
+                                        </div>
+                                        <p class="fund-tab-content-information-last-text">
+                                            Քանի դեռ մենք չենք գործում՝ ժամանակն աշխատում է մեր դեմ։
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="forfund-video">
+                            <video class="fund-video" controls>
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h5>Տեսանութի /հարցազրույցի/ վերնագիրը</h5>
+                        </div>
+                    </div>
+
+                    <div class="fund-tab-content2">
+                        <div class="firstupdate">
+                            <div class="updateimg"></div>
+                            <div class="updatetitle">
+                                <p><i class="fa-regular fa-calendar-days"></i> November 28, 2023 | 6 months ago</p>
+                                <h5>Թարմացման վերնագիրը</h5>
+                                <p>Հանգանակություններն օգտագործվել են գնելու համար ներքոնշյալ տեխնիկական միջոցները։</p>
+                            </div>
+                        </div>
+                        <div class="firstupdate">
+                            <div class="updateimg"></div>
+                            <div class="updatetitle">
+                                <p><i class="fa-regular fa-calendar-days"></i> November 28, 2023 | 6 months ago</p>
+                                <h5>Թարմացման վերնագիրը</h5>
+                                <p>Հանգանակություններն օգտագործվել են գնելու համար ներքոնշյալ տեխնիկական միջոցները։</p>
+                            </div>
+                        </div>
+                        <div class="firstupdate">
+                            <div class="updateimg"></div>
+                            <div class="updatetitle">
+                                <p><i class="fa-regular fa-calendar-days"></i> November 28, 2023 | 6 months ago</p>
+                                <h5>Թարմացման վերնագիրը</h5>
+                                <p>Հանգանակություններն օգտագործվել են գնելու համար ներքոնշյալ տեխնիկական միջոցները։</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fund-tab-content3">
+                        <p>We provide all the equipment you need for your shoot at Panorama Studios. Our
+                            list of
+                            appliances includes a camera, impulse lighting (godox), colored LED lights,
+                            several main
+                            lights and other accessories for the shoot.. Make sure to list all the tools you
+                            will
+                            need when booking your session at one of our pavilions. All the items come free
+                            of
+                            charge and stay at your disposal during the shoot.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container-footer container">
+            <div class="footer-content1">
+                <a href="./index.html">
+                    <div class="headerlogo"></div>
+                </a>
+                <div class="text footer-text">
+                    <p>Կարճ ինֆո այստեղ։ Eu egestas imperdiet consectetur egestas ante aliquet posuere vitae.</p>
+                </div>
+            </div>
+            <div class="footer-content2">
+                <h3 class="footer-title">ՀԻՄՆԱԴՐԱՄ</h3>
+                <ul class="list-reset">
+                    <li class="footer-lists"><a href="#">ՄԵՐ ՄԱՍԻՆ</a></li>
+                    <li class="footer-lists"><a href="#">ԽՆԴԻՐԸ</a></li>
+                    <li class="footer-lists"><a href="#">ՀՈԳԱԲԱՐՁՈՒՆԵՐԻ ԽՈՐՀՈՒՐԴ</li>
+                    <li class="footer-lists"><a href="#">ԹԻՄԸ</a></li>
+                    <li class="footer-lists"><a href="#">ԱՋԱԿԻՑՆԵՐ</a></li>
+                    <li class="footer-lists"><a href="#">ՆԱԽԱԳԻԾ</a></li>
+                </ul>
+            </div>
+            <div class="footer-content2">
+                <h3 class="footer-title">ՏԵՍԱԴԱՐԱՆ</h3>
+                <ul class="list-reset">
+                    <li class="footer-lists"><a href="#">ՃԱՆԱՉԵՆՔ ՀԱՅԱՍՏԱՆԸ</a></li>
+                    <li class="footer-lists"><a href="#">ԱՎԱՆԴՈՒՅԹՆԵՐ</a></li>
+                    <li class="footer-lists"><a href="#">ՊԱՏՄՈՒԹՅՈՒՆՆԵՐ</a></li>
+                    <li class="footer-lists"><a href="#">ԱԶԳԱՅԻՆ ԵՐԳ</a></li>
+                    <li class="footer-lists"><a href="#">ԱԶԳԱՅԻՆ ՊԱՐ</a></li>
+                </ul>
+            </div>
+            <div class="footer-content2">
+                <h3 class="footer-title">ԿԱՊ</h3>
+                <ul class="list-reset list-reset-button">
+                    <a href="tel:+374-00-00-00" class="button  phone">+374-00-00-00</a>
+                    <a href="mailto:gagikidentity@gmail.com" class="button  email">gagikidentity@gmail.com</a>
+                    <a href="#" class="button  location">RA, Yerevan, Road 00</a>
+                    <div class="footer-icons">
+                        <div class="social-icons"><a href="https://x.com/?lang=ru" target="_blank"><i
+                                    class="fa-brands fa-x-twitter"></i></a></div>
+                        <div class="social-icons"><a href="https://www.instagram.com/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></i></a></div>
+                        <div class="social-icons"><a href="https://www.facebook.com/identity.armenia/?_rdr"
+                                target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+                        <div class="social-icons"><a
+                                href="https://www.linkedin.com/login/ru?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
+                                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                </ul>
+            </div>
+            <div class="footer-content2">
+                <h3 class="footer-title">ԲԱԺԱՆԱՐԴԱԳՐՈՒԹՅՈՒՆ</h3>
+                <ul class="list-reset ">
+                    <p>Ստացեք հիմնադրամի նորությունները և նախագծի կարևոր թարմացումներն էլ-փոստով</p>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="footerform">
+                        <input type="hidden" name="access_key" value="53a3c34a-18a5-4ba3-9c27-eef8b72864af">
+                        <input type="email" name="email" placeholder="էլ-փոստ" class="emailinput" required>
+                        <button type="submit" class="subscribe-button">ԲԱԺԱՆՈՐԴԱԳՐՎԵԼ</button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="container-deepfooter container">
+            <p>© «Ինքնություն», Հիմնադրամ <span class="copyright" id="copyright"></span></p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="./backtotop.js"></script>
+</body>
+
+</html>

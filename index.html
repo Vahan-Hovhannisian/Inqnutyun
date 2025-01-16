@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ԻՆՔՆՈՒԹՅՈՒՆ</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./videotube/videotube.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-header container">
+            <a class="logo" href="./index.html">
+                <img src="./Img/Logo.png" alt="Logo">
+                <strong class="logo-text">ԻՆՔՆՈՒԹՅՈՒՆ</strong>
+            </a>
+            <nav class="navbar">
+                <ul class="list-reset menu-ul-first">
+                    <li>
+                        <div class="menu-link-hover">
+                            <div class="videolibrary" onclick="myMenuFunction()">
+                                <a href="#" class="menu-link menu-link-videolibrary">ՏԵՍԱԴԱՐԱՆ
+                                    <i class="fa-solid fa-angle-down down"></i></a>
+                            </div>
+                            <ul class="videolibrary-content list-reset" id="videolibrary-content">
+                                <li><a href="gallery.html" class="videolibrary-services">ՃԱՆԱՉԵՆՔ ՀԱՅԱՍՏԱՆԸ</a></li>
+                                <li><a href="gallery.html" class="videolibrary-services">ԱՎԱՆԴՈՒՅԹՆԵՐ</a></li>
+                                <li><a href="gallery.html" class="videolibrary-services">ՊԱՏՄՈՒԹՅՈՒՆՆԵՐ</a></li>
+                                <li><a href="gallery.html" class="videolibrary-services">ԱԶԳԱՅԻՆ ԵՐԳ</a></li>
+                                <li><a href="gallery.html" class="videolibrary-services">ԱԶԳԱՅԻՆ ՊԱՐ</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="./fund.html">ՀԻՄՆԱԴՐԱՄ</a></li>
+                    <li><a href="./contact.html">ԿԱՊ</a></li>
+                </ul>
+
+            </nav>
+            <ul class="list-reset menu-ul">
+                <li>
+                    <div class="menu-link-hover">
+                        <div class="language" onclick="myLanguageFunction()">
+                            <a href="#" class="menu-link menu-link-language"><i class="fa-solid fa-globe"></i>
+                                <i class="fa-solid fa-angle-down down"></i></a>
+                        </div>
+                        <ul class="language-content list-reset" id="language-content">
+                            <li><a href="#" class="language-services">
+                                    <div class="flag-armenia"></div>
+                                </a></li>
+                            <li><a href="#" class="language-services">
+                                    <div class="flag-usa"></div>
+                                </a></li>
+                            <li><a href="#" class="language-services">
+                                    <div class="flag-russia"></div>
+                                </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button class="button-header">
+                        <a href="donation.html">
+                            <span>ՆՎԻՐԱԲԵՐԵԼ</span></a></button>
+                </li>
+            </ul>
+            <button class="burger">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
+        </div>
+    </header>
+    <div class="contacticons">
+        <div class="twitter"><a href="https://x.com/?lang=ru" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <div class="instagram"><a href="https://www.instagram.com/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="facebook"><a href="https://www.facebook.com/identity.armenia/?_rdr" target="_blank"><i
+                    class="fa-brands fa-facebook"></i></a></div>
+        <div class="linkedin"><a
+                href="https://www.linkedin.com/login/ru?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
+                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+    </div>
+    <main class="main">
+        <div class="main__overlay"></div>
+        <section class="main-section1">
+            <div class="main-section1container container">
+                <h1>ԻՆՔՆՈՒԹՅՈՒՆ</h1>
+                <h2>ԻՆՔՆՈՒԹՅԱՆ ՍԱՐԴԱՐԱՊԱՏՈՒՄ ՀԱՂԹԱՆԱԿՆ ԱՅԼԸՆՏՐԱՆՔ ՉՈՒՆԻ</h2>
+                <a href="https://youtu.be/2hw1VcMyuWI?si=f6RDIh-UWR63WSji" class="tube"><button class="videobutton">
+                        <i class="fa-solid fa-play playicon"></i>ԴԻՏԵԼ ՏԵՍԱՆՅՈՒԹԸ</button></a>
+            </div>
+        </section>
+        <section class="main-section2">
+            <div class="main-section2container container">
+                <h2>ԱՄԵՆԱՇԱՏ ԴԻՏՎԱԾ</h2>
+            </div>
+            <swiper-container class="myswiper" slides-per-view="3" centered-slides="true" space-between="30"
+                pagination="true" pagination-type="fraction" navigation="true" autoplay-delay="1500"
+                autoplay-disable-on-interaction="true" loop="true">
+                <swiper-slide><img src="./Img/nature.png">
+                    <div class="pojectname">ՆԱԽԱԳԾԻ ԱՆՎԱՆՈՒՄԸ</div>
+                </swiper-slide>
+                <swiper-slide><img src="./Img/section1img.png">
+                    <div class="pojectname">ՆԱԽԱԳԾԻ ԱՆՎԱՆՈՒՄԸ</div>
+                </swiper-slide>
+                <swiper-slide><img src="./Img/nature.png">
+                    <div class="pojectname">ՆԱԽԱԳԾԻ ԱՆՎԱՆՈՒՄԸ</div>
+                </swiper-slide>
+                <swiper-slide><img src="./Img/section1img.png">
+                    <div class="pojectname">ՆԱԽԱԳԾԻ ԱՆՎԱՆՈՒՄԸ</div>
+                </swiper-slide>
+                <swiper-slide><img src="./Img/nature.png">
+                    <div class="pojectname">ՆԱԽԱԳԾԻ ԱՆՎԱՆՈՒՄԸ</div>
+                </swiper-slide>
+                <swiper-slide><img src="./Img/section1img.png">
+                    <div class="pojectname">ՆԱԽԱԳԾԻ ԱՆՎԱՆՈՒՄԸ</div>
+                </swiper-slide>
+            </swiper-container>
+        </section>
+        <section class="main-section3">
+            <div class="main-section3container container">
+                <h2>ՃԱՆԱՉԵՆՔ ՀԱՅԱՍՏԱՆԸ</h2>
+                <div class="choosebutton">
+                    <input class="radio" id="bolory" name="group" type="radio" checked>
+                    <input class="radio" id="hh" name="group" type="radio">
+                    <input class="radio" id="arcax" name="group" type="radio">
+                    <input class="radio" id="aragacotn" name="group" type="radio">
+                    <input class="radio" id="ararat" name="group" type="radio">
+                    <input class="radio" id="armavir" name="group" type="radio">
+                    <input class="radio" id="gexarquniq" name="group" type="radio">
+                    <input class="radio" id="yerevan" name="group" type="radio">
+                    <input class="radio" id="kotayq" name="group" type="radio">
+                    <input class="radio" id="lori" name="group" type="radio">
+                    <input class="radio" id="shirak" name="group" type="radio">
+                    <input class="radio" id="syuniq" name="group" type="radio">
+                    <input class="radio" id="tavush" name="group" type="radio">
+                    <input class="radio" id="vayocdzor" name="group" type="radio">
+                    <div class="tabs">
+                        <label class="tab" id="bolorytab" for="bolory">Բոլորը</label>
+                        <label class="tab" id="hhtab" for="hh">ՀՀ</label>
+                        <label class="tab" id="arcaxtab" for="arcax">Արցախ</label>
+                        <label class="tab" id="aragacotntab" for="aragacotn">Արագածոտն</label>
+                        <label class="tab" id="ararattab" for="ararat">Արարատ</label>
+                        <label class="tab" id="armavirtab" for="armavir">Արմավիր</label>
+                        <label class="tab" id="gexarquniqtab" for="gexarquniq">Գեղարքունիք</label>
+                        <label class="tab" id="yerevantab" for="yerevan">Երևան</label>
+                        <label class="tab" id="kotayqtab" for="kotayq">Կոտայք</label>
+                        <label class="tab" id="loritab" for="lori">Լոռի</label>
+                        <label class="tab" id="shiraktab" for="shirak">Շիրակ</label>
+                        <label class="tab" id="syuniqtab" for="syuniq">Սյունիք</label>
+                        <label class="tab" id="tavushtab" for="tavush">Տավուշ</label>
+                        <label class="tab" id="vayocdzortab" for="vayocdzor">Վայոց ձոր</label>
+                    </div>
+                    <div class="formapanddescription">
+                        <div class="map">
+                            <div class="shirakmap" id="shirakmap"></div>
+                            <div class="tavushmap" id="tavushmap"></div>
+                            <div class="aragacotnmap" id="aragacotnmap"></div>
+                            <div class="araratmap" id="araratmap"></div>
+                            <div class="armavirmap" id="armavirmap"></div>
+                            <div class="gexarquniqmap" id="gexarquniqmap"></div>
+                            <div class="sevanmap" id="sevanmap"></div>
+                            <div class="arcvashenmap" id="arcvashenmap"></div>
+                            <div class="yerevanmap" id="yerevanmap"></div>
+                            <div class="kotayqmap" id="kotayqmap"></div>
+                            <div class="lorimap" id="lorimap"></div>
+                            <div class="syuniqmap" id="syuniqmap"></div>
+                            <div class="vayocdzormap" id="vayocdzormap"></div>
+                            <div class="arcaxmap" id="arcaxmap"></div>
+                        </div>
+                        <div class="panels">
+                            <div class="panel" id="bolory-panel">
+                                <h3 class="region-name">ՀՀ ԵՎ ԱՐՑԱԽ</h3>
+                                <h4 class="region-sights"><span>24 </span> պատմամշակութային կոթող</h4>
+                                <div class="region-informations">
+                                    <div class="region-information"><img src="./Img/area.png"><span>2704 քկմ</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/users.png"><span>103 589</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/location.png"><span>5 քաղաք, 57
+                                            գյուղ</span></div>
+                                </div>
+                                <p class="aboutregion">Տավուշի մարզը գտնվում է Հայաստանի հյուսիսարևելյան հատվածում։ <br>
+                                    Ընդգրկում է Իջևանի, Տավուշի, Նոյեմբերյանի, Դիլիջանի տարածաշրջանները: <br>
+                                    Մարզը հյուսիսում սահմանակից է <a
+                                        href="https://hy.wikipedia.org/wiki/%D5%8E%D6%80%D5%A1%D5%BD%D5%BF%D5%A1%D5%B6"
+                                        target="_blank">Վրաստանին</a>, արևելքում՝ <a
+                                        href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
+                                        target="_blank">Ադրբեջանին</a>։</p>
+                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
+                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
+                                    loop="true">
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                </swiper-container>
+                                <button class="main-region-button"><a href="gallery.html"><span>ԱՆՑՆԵԼ
+                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                            </div>
+                            <div class="panel" id="hh-panel">
+                                <h3 class="region-name">ՀՀ</h3>
+                                <h4 class="region-sights"><span>24 </span> պատմամշակութային կոթող</h4>
+                                <div class="region-informations">
+                                    <div class="region-information"><img src="./Img/area.png"><span>2704 քկմ</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/users.png"><span>103 589</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/location.png"><span>5 քաղաք, 57
+                                            գյուղ</span></div>
+                                </div>
+                                <p class="aboutregion">Տավուշի մարզը գտնվում է Հայաստանի հյուսիսարևելյան հատվածում։ <br>
+                                    Ընդգրկում է Իջևանի, Տավուշի, Նոյեմբերյանի, Դիլիջանի տարածաշրջանները: <br>
+                                    Մարզը հյուսիսում սահմանակից է <a
+                                        href="https://hy.wikipedia.org/wiki/%D5%8E%D6%80%D5%A1%D5%BD%D5%BF%D5%A1%D5%B6"
+                                        target="_blank">Վրաստանին</a>, արևելքում՝ <a
+                                        href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
+                                        target="_blank">Ադրբեջանին</a>։</p>
+                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
+                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
+                                    loop="true">
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                </swiper-container>
+                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
+                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                            </div>
+                            <div class="panel" id="arcax-panel">
+                                <h3 class="region-name">ԱՐՑԱԽ</h3>
+                                <h4 class="region-sights"><span>24 </span> պատմամշակութային կոթող</h4>
+                                <div class="region-informations">
+                                    <div class="region-information"><img src="./Img/area.png"><span>2704 քկմ</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/users.png"><span>103 589</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/location.png"><span>5 քաղաք, 57
+                                            գյուղ</span></div>
+                                </div>
+                                <p class="aboutregion">Տավուշի մարզը գտնվում է Հայաստանի հյուսիսարևելյան հատվածում։ <br>
+                                    Ընդգրկում է Իջևանի, Տավուշի, Նոյեմբերյանի, Դիլիջանի տարածաշրջանները: <br>
+                                    Մարզը հյուսիսում սահմանակից է <a
+                                        href="https://hy.wikipedia.org/wiki/%D5%8E%D6%80%D5%A1%D5%BD%D5%BF%D5%A1%D5%B6"
+                                        target="_blank">Վրաստանին</a>, արևելքում՝ <a
+                                        href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
+                                        target="_blank">Ադրբեջանին</a>։</p>
+                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
+                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
+                                    loop="true">
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                </swiper-container>
+                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
+                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                            </div>
+                            <div class="panel" id="aragacotn-panel">
+                                <h3 class="region-name">ԱՐԱԳԱԾՈՏՆԻ ՄԱՐԶ</h3>
+                                <h4 class="region-sights"><span>24 </span> պատմամշակութային կոթող</h4>
+                                <div class="region-informations">
+                                    <div class="region-information"><img src="./Img/area.png"><span>2704 քկմ</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/users.png"><span>103 589</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/location.png"><span>5 քաղաք, 57
+                                            գյուղ</span></div>
+                                </div>
+                                <p class="aboutregion">Տավուշի մարզը գտնվում է Հայաստանի հյուսիսարևելյան հատվածում։ <br>
+                                    Ընդգրկում է Իջևանի, Տավուշի, Նոյեմբերյանի, Դիլիջանի տարածաշրջանները: <br>
+                                    Մարզը հյուսիսում սահմանակից է <a
+                                        href="https://hy.wikipedia.org/wiki/%D5%8E%D6%80%D5%A1%D5%BD%D5%BF%D5%A1%D5%B6"
+                                        target="_blank">Վրաստանին</a>, արևելքում՝ <a
+                                        href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
+                                        target="_blank">Ադրբեջանին</a>։</p>
+                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
+                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
+                                    loop="true">
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                </swiper-container>
+                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
+                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                            </div>
+                            <div class="panel" id="ararat-panel">
+                                <h3 class="region-name">ԱՐԱՐԱՏԻ ՄԱՐԶ</h3>
+                                <h4 class="region-sights"><span>24 </span> պատմամշակութային կոթող</h4>
+                                <div class="region-informations">
+                                    <div class="region-information"><img src="./Img/area.png"><span>2704 քկմ</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/users.png"><span>103 589</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/location.png"><span>5 քաղաք, 57
+                                            գյուղ</span></div>
+                                </div>
+                                <p class="aboutregion">Տավուշի մարզը գտնվում է Հայաստանի հյուսիսարևելյան հատվածում։ <br>
+                                    Ընդգրկում է Իջևանի, Տավուշի, Նոյեմբերյանի, Դիլիջանի տարածաշրջանները: <br>
+                                    Մարզը հյուսիսում սահմանակից է <a
+                                        href="https://hy.wikipedia.org/wiki/%D5%8E%D6%80%D5%A1%D5%BD%D5%BF%D5%A1%D5%B6"
+                                        target="_blank">Վրաստանին</a>, արևելքում՝ <a
+                                        href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
+                                        target="_blank">Ադրբեջանին</a>։</p>
+                                <swiper-container class="myswiper" centered-slides="true" space-between="20"
+                                    pagination="true" pagination-type="fraction" navigation="true" autoplay-delay="1500"
+                                    autoplay-disable-on-interaction="true" loop="true">
+                                    <swiper-slide>
+                                        <div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2"><img src="./Img/section1img.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/section1img.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                </swiper-container>
+                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
+                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                            </div>
+                            <div class="panel" id="armavir-panel">
+                                <h3 class="region-name">ԱՐՄԱՎԻՐԻ ՄԱՐԶ</h3>
+                                <h4 class="region-sights"><span>24 </span> պատմամշակութային կոթող</h4>
+                                <div class="region-informations">
+                                    <div class="region-information"><img src="./Img/area.png"><span>2704 քկմ</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/users.png"><span>103 589</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/location.png"><span>5 քաղաք, 57
+                                            գյուղ</span></div>
+                                </div>
+                                <p class="aboutregion">Տավուշի մարզը գտնվում է Հայաստանի հյուսիսարևելյան հատվածում։ <br>
+                                    Ընդգրկում է Իջևանի, Տավուշի, Նոյեմբերյանի, Դիլիջանի տարածաշրջանները: <br>
+                                    Մարզը հյուսիսում սահմանակից է <a
+                                        href="https://hy.wikipedia.org/wiki/%D5%8E%D6%80%D5%A1%D5%BD%D5%BF%D5%A1%D5%B6"
+                                        target="_blank">Վրաստանին</a>, արևելքում՝ <a
+                                        href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
+                                        target="_blank">Ադրբեջանին</a>։</p>
+                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
+                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
+                                    autoplay-delay="1500" autoplay-disable-on-interaction="true" loop="true">
+                                    <swiper-slide>
+                                        <div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2"><img src="./Img/section1img.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/section1img.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                </swiper-container>
+                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
+                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                            </div>
+                            <div class="panel" id="gexarquniq-panel">
+                                <h3 class="region-name">ԳԵՂԱՐՔՈՒՆԻՔԻ ՄԱՐԶ</h3>
+                                <h4 class="region-sights"><span>24 </span> պատմամշակութային կոթող</h4>
+                                <div class="region-informations">
+                                    <div class="region-information"><img src="./Img/area.png"><span>2704 քկմ</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/users.png"><span>103 589</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/location.png"><span>5 քաղաք, 57
+                                            գյուղ</span></div>
+                                </div>
+                                <p class="aboutregion">Տավուշի մարզը գտնվում է Հայաստանի հյուսիսարևելյան հատվածում։ <br>
+                                    Ընդգրկում է Իջևանի, Տավուշի, Նոյեմբերյանի, Դիլիջանի տարածաշրջանները: <br>
+                                    Մարզը հյուսիսում սահմանակից է <a
+                                        href="https://hy.wikipedia.org/wiki/%D5%8E%D6%80%D5%A1%D5%BD%D5%BF%D5%A1%D5%B6"
+                                        target="_blank">Վրաստանին</a>, արևելքում՝ <a
+                                        href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
+                                        target="_blank">Ադրբեջանին</a>։</p>
+                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
+                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
+                                    autoplay-delay="1500" autoplay-disable-on-interaction="true" loop="true">
+                                    <swiper-slide>
+                                        <div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2"><img src="./Img/section1img.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/section1img.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                </swiper-container>
+                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
+                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                            </div>
+                            <div class="panel" id="yerevan-panel">
+                                <h3 class="region-name">ԵՐԵՎԱՆ</h3>
+                                <h4 class="region-sights"><span>24 </span> պատմամշակութային կոթող</h4>
+                                <div class="region-informations">
+                                    <div class="region-information"><img src="./Img/area.png"><span>2704 քկմ</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/users.png"><span>103 589</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/location.png"><span>5 քաղաք, 57
+                                            գյուղ</span></div>
+                                </div>
+                                <p class="aboutregion">Տավուշի մարզը գտնվում է Հայաստանի հյուսիսարևելյան հատվածում։ <br>
+                                    Ընդգրկում է Իջևանի, Տավուշի, Նոյեմբերյանի, Դիլիջանի տարածաշրջանները: <br>
+                                    Մարզը հյուսիսում սահմանակից է <a
+                                        href="https://hy.wikipedia.org/wiki/%D5%8E%D6%80%D5%A1%D5%BD%D5%BF%D5%A1%D5%B6"
+                                        target="_blank">Վրաստանին</a>, արևելքում՝ <a
+                                        href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
+                                        target="_blank">Ադրբեջանին</a>։</p>
+                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
+                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
+                                    autoplay-delay="1500" autoplay-disable-on-interaction="true" loop="true">
+                                    <swiper-slide>
+                                        <div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2"><img src="./Img/section1img.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/section1img.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                </swiper-container>
+                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
+                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                            </div>
+                            <div class="panel" id="kotayq-panel">
+                                <h3 class="region-name">ԿՈՏԱՅՔԻ ՄԱՐԶ</h3>
+                                <h4 class="region-sights"><span>24 </span> պատմամշակութային կոթող</h4>
+                                <div class="region-informations">
+                                    <div class="region-information"><img src="./Img/area.png"><span>2704 քկմ</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/users.png"><span>103 589</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/location.png"><span>5 քաղաք, 57
+                                            գյուղ</span></div>
+                                </div>
+                                <p class="aboutregion">Տավուշի մարզը գտնվում է Հայաստանի հյուսիսարևելյան հատվածում։ <br>
+                                    Ընդգրկում է Իջևանի, Տավուշի, Նոյեմբերյանի, Դիլիջանի տարածաշրջանները: <br>
+                                    Մարզը հյուսիսում սահմանակից է <a
+                                        href="https://hy.wikipedia.org/wiki/%D5%8E%D6%80%D5%A1%D5%BD%D5%BF%D5%A1%D5%B6"
+                                        target="_blank">Վրաստանին</a>, արևելքում՝ <a
+                                        href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
+                                        target="_blank">Ադրբեջանին</a>։</p>
+                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
+                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
+                                    autoplay-delay="1500" autoplay-disable-on-interaction="true" loop="true">
+                                    <swiper-slide>
+                                        <div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2"><img src="./Img/section1img.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/section1img.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                </swiper-container>
+                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
+                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                            </div>
+                            <div class="panel" id="lori-panel">
+                                <h3 class="region-name">ԼՈՌՈՒ ՄԱՐԶ</h3>
+                                <h4 class="region-sights"><span>24 </span> պատմամշակութային կոթող</h4>
+                                <div class="region-informations">
+                                    <div class="region-information"><img src="./Img/area.png"><span>2704 քկմ</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/users.png"><span>103 589</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/location.png"><span>5 քաղաք, 57
+                                            գյուղ</span></div>
+                                </div>
+                                <p class="aboutregion">Տավուշի մարզը գտնվում է Հայաստանի հյուսիսարևելյան հատվածում։ <br>
+                                    Ընդգրկում է Իջևանի, Տավուշի, Նոյեմբերյանի, Դիլիջանի տարածաշրջանները: <br>
+                                    Մարզը հյուսիսում սահմանակից է <a
+                                        href="https://hy.wikipedia.org/wiki/%D5%8E%D6%80%D5%A1%D5%BD%D5%BF%D5%A1%D5%B6"
+                                        target="_blank">Վրաստանին</a>, արևելքում՝ <a
+                                        href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
+                                        target="_blank">Ադրբեջանին</a>։</p>
+                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
+                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
+                                    autoplay-delay="1500" autoplay-disable-on-interaction="true" loop="true">
+                                    <swiper-slide>
+                                        <div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2"><img src="./Img/section1img.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/section1img.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                </swiper-container>
+                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
+                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                            </div>
+                            <div class="panel" id="shirak-panel">
+                                <h3 class="region-name">ՇԻՐԱԿԻ ՄԱՐԶ</h3>
+                                <h4 class="region-sights"><span>24 </span> պատմամշակութային կոթող</h4>
+                                <div class="region-informations">
+                                    <div class="region-information"><img src="./Img/area.png"><span>2704 քկմ</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/users.png"><span>103 589</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/location.png"><span>5 քաղաք, 57
+                                            գյուղ</span></div>
+                                </div>
+                                <p class="aboutregion">Տավուշի մարզը գտնվում է Հայաստանի հյուսիսարևելյան հատվածում։ <br>
+                                    Ընդգրկում է Իջևանի, Տավուշի, Նոյեմբերյանի, Դիլիջանի տարածաշրջանները: <br>
+                                    Մարզը հյուսիսում սահմանակից է <a
+                                        href="https://hy.wikipedia.org/wiki/%D5%8E%D6%80%D5%A1%D5%BD%D5%BF%D5%A1%D5%B6"
+                                        target="_blank">Վրաստանին</a>, արևելքում՝ <a
+                                        href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
+                                        target="_blank">Ադրբեջանին</a>։</p>
+                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
+                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
+                                    autoplay-delay="1500" autoplay-disable-on-interaction="true" loop="true">
+                                    <swiper-slide>
+                                        <div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2"><img src="./Img/section1img.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/section1img.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                </swiper-container>
+                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
+                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                            </div>
+                            <div class="panel" id="syuniq-panel">
+                                <h3 class="region-name">ՍՅՈՒՆԻՔԻ ՄԱՐԶ</h3>
+                                <h4 class="region-sights"><span>24 </span> պատմամշակութային կոթող</h4>
+                                <div class="region-informations">
+                                    <div class="region-information"><img src="./Img/area.png"><span>2704 քկմ</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/users.png"><span>103 589</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/location.png"><span>5 քաղաք, 57
+                                            գյուղ</span></div>
+                                </div>
+                                <p class="aboutregion">Տավուշի մարզը գտնվում է Հայաստանի հյուսիսարևելյան հատվածում։ <br>
+                                    Ընդգրկում է Իջևանի, Տավուշի, Նոյեմբերյանի, Դիլիջանի տարածաշրջանները: <br>
+                                    Մարզը հյուսիսում սահմանակից է <a
+                                        href="https://hy.wikipedia.org/wiki/%D5%8E%D6%80%D5%A1%D5%BD%D5%BF%D5%A1%D5%B6"
+                                        target="_blank">Վրաստանին</a>, արևելքում՝ <a
+                                        href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
+                                        target="_blank">Ադրբեջանին</a>։</p>
+                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
+                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
+                                    autoplay-delay="1500" autoplay-disable-on-interaction="true" loop="true">
+                                    <swiper-slide>
+                                        <div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2"><img src="./Img/section1img.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/section1img.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                </swiper-container>
+                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
+                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                            </div>
+                            <div class="panel" id="tavush-panel">
+                                <h3 class="region-name">ՏԱՎՈՒՇԻ ՄԱՐԶ</h3>
+                                <h4 class="region-sights"><span>24 </span> պատմամշակութային կոթող</h4>
+                                <div class="region-informations">
+                                    <div class="region-information"><img src="./Img/area.png"><span>2704 քկմ</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/users.png"><span>103 589</span>
+                                    </div>
+                                    <div class="region-information"><img src="./Img/location.png"><span>5 քաղաք, 57
+                                            գյուղ</span></div>
+                                </div>
+                                <p class="aboutregion">Տավուշի մարզը գտնվում է Հայաստանի հյուսիսարևելյան հատվածում։ <br>
+                                    Ընդգրկում է Իջևանի, Տավուշի, Նոյեմբերյանի, Դիլիջանի տարածաշրջանները: <br>
+                                    Մարզը հյուսիսում սահմանակից է <a
+                                        href="https://hy.wikipedia.org/wiki/%D5%8E%D6%80%D5%A1%D5%BD%D5%BF%D5%A1%D5%B6"
+                                        target="_blank">Վրաստանին</a>, արևելքում՝ <a
+                                        href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
+                                        target="_blank">Ադրբեջանին</a>։</p>
+                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
+                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
+                                    autoplay-delay="1500" autoplay-disable-on-interaction="true" loop="true">
+                                    <swiper-slide>
+                                        <div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2"><img src="./Img/section1img.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/section1img.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                </swiper-container>
+                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
+                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                            </div>
+                            <section class="panel" id="vayocdzor-panel">
+                                <h3 class="region-name">ՎԱՅՈՑ ՁՈՐԻ ՄԱՐԶ</h3>
+                                <h4 class="region-sights"><span>24 </span> պատմամշակութային կոթող</h4>
+                                <div class="region-informations">
+                                    <div class="region-information">
+                                        <img src="./Img/area.png" alt="Area size icon">
+                                        <span>2704 քկմ</span>
+                                    </div>
+                                    <div class="region-information">
+                                        <img src="./Img/users.png" alt="Population icon">
+                                        <span>103589</span>
+                                    </div>
+                                    <div class="region-information">
+                                        <img src="./Img/location.png" alt="Location icon">
+                                        <span>5 քաղաք, 57 գյուղ</span>
+                                    </div>
+                                </div>
+                                <p class="aboutregion">
+                                    Տավուշի մարզը գտնվում է Հայաստանի հյուսիսարևելյան հատվածում։ <br>
+                                    Ընդգրկում է Իջևանի, Տավուշի, Նոյեմբերյանի, Դիլիջանի տարածաշրջանները: <br>
+                                    Մարզը հյուսիսում սահմանակից է <a
+                                        href="https://hy.wikipedia.org/wiki/%D5%8E%D6%80%D5%A1%D5%BD%D5%BF%D5%A1%D5%B6"
+                                        target="_blank">Վրաստանին</a>,
+                                    արևելքում՝ <a
+                                        href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
+                                        target="_blank">Ադրբեջանին</a>։
+                                </p>
+
+                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
+                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
+                                    autoplay="true" autoplay-delay="1500" autoplay-disable-on-interaction="true"
+                                    loop="true">
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <!-- Repeat swiper-slide as necessary -->
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4"
+                                                    type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4"
+                                                    type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <div class="main-slider2">
+                                            <video class="main-slider2-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <h5>Տեսանութի վերնագիրը</h5>
+                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        </div>
+                                    </swiper-slide>
+                                </swiper-container>
+
+                                <button class="main-region-button">
+                                    <a href="#"><span>ԱՆՑՆԵԼ ՏԵՍԱԴԱՐԱՆ</span></a>
+                                </button>
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-section4">
+            <div class="main-section4container container">
+                <div class="main-section4container-slider">
+                    <span style="--i:1;" class="main-section4container-span"><img src="./Img/reArmenia.jpg"></span>
+                    <span style="--i:2;" class="main-section4container-span"><img src="./Img/reArmenia.jpg"></span>
+                    <span style="--i:3;" class="main-section4container-span"><img src="./Img/reArmenia.jpg"></span>
+                    <span style="--i:4;" class="main-section4container-span"><img src="./Img/reArmenia.jpg"></span>
+                    <span style="--i:5;" class="main-section4container-span"><img src="./Img/reArmenia.jpg"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container-footer container">
+            <div class="footer-content1">
+                <a href="./index.html">
+                    <div class="headerlogo"></div>
+                </a>
+                <div class="text footer-text">
+                    <p>Կարճ ինֆո այստեղ։ Eu egestas imperdiet consectetur egestas ante aliquet posuere vitae.</p>
+                </div>
+            </div>
+            <div class="footer-content2">
+                <h3 class="footer-title">ՀԻՄՆԱԴՐԱՄ</h3>
+                <ul class="list-reset">
+                    <li class="footer-lists"><a href="#">ՄԵՐ ՄԱՍԻՆ</a></li>
+                    <li class="footer-lists"><a href="#">ԽՆԴԻՐԸ</a></li>
+                    <li class="footer-lists"><a href="#">ՀՈԳԱԲԱՐՁՈՒՆԵՐԻ ԽՈՐՀՈՒՐԴ</li>
+                    <li class="footer-lists"><a href="#">ԹԻՄԸ</a></li>
+                    <li class="footer-lists"><a href="#">ԱՋԱԿԻՑՆԵՐ</a></li>
+                    <li class="footer-lists"><a href="#">ՆԱԽԱԳԻԾ</a></li>
+                </ul>
+            </div>
+            <div class="footer-content2">
+                <h3 class="footer-title">ՏԵՍԱԴԱՐԱՆ</h3>
+                <ul class="list-reset">
+                    <li class="footer-lists"><a href="#">ՃԱՆԱՉԵՆՔ ՀԱՅԱՍՏԱՆԸ</a></li>
+                    <li class="footer-lists"><a href="#">ԱՎԱՆԴՈՒՅԹՆԵՐ</a></li>
+                    <li class="footer-lists"><a href="#">ՊԱՏՄՈՒԹՅՈՒՆՆԵՐ</a></li>
+                    <li class="footer-lists"><a href="#">ԱԶԳԱՅԻՆ ԵՐԳ</a></li>
+                    <li class="footer-lists"><a href="#">ԱԶԳԱՅԻՆ ՊԱՐ</a></li>
+                </ul>
+            </div>
+            <div class="footer-content2">
+                <h3 class="footer-title">ԿԱՊ</h3>
+                <ul class="list-reset list-reset-button">
+                    <a href="tel:+374-00-00-00" class="button  phone">+374-00-00-00</a>
+                    <a href="mailto:gagikidentity@gmail.com" class="button  email">gagikidentity@gmail.com</a>
+                    <a href="#" class="button  location">RA, Yerevan, Road 00</a>
+                    <div class="footer-icons">
+                        <div class="social-icons"><a href="https://x.com/?lang=ru" target="_blank"><i
+                                    class="fa-brands fa-x-twitter"></i></a></div>
+                        <div class="social-icons"><a href="https://www.instagram.com/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></i></a></div>
+                        <div class="social-icons"><a href="https://www.facebook.com/identity.armenia/?_rdr"
+                                target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+                        <div class="social-icons"><a
+                                href="https://www.linkedin.com/login/ru?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
+                                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="footer-content2">
+                <h3 class="footer-title">ԲԱԺԱՆԱՐԴԱԳՐՈՒԹՅՈՒՆ</h3>
+                <ul class="list-reset ">
+                    <p>Ստացեք հիմնադրամի նորությունները և նախագծի կարևոր թարմացումներն էլ-փոստով</p>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="footerform">
+                        <input type="hidden" name="access_key" value="53a3c34a-18a5-4ba3-9c27-eef8b72864af">
+                        <input type="email" name="email" placeholder="էլ-փոստ" class="emailinput" required>
+                        <button type="submit" class="subscribe-button">ԲԱԺԱՆՈՐԴԱԳՐՎԵԼ</button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="container-deepfooter container">
+            <p>© «Ինքնություն», Հիմնադրամ <span class="copyright" id="copyright"></span></p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="./videotube/videotube.min.js"></script>
+    <script src="./swiperlibrary.js"></script>
+
+</body>
+
+</html>

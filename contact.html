@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>ԻՆՔՆՈՒԹՅՈՒՆ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./videotube/videotube.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-header container">
+            <a class="logo" href="./index.html">
+                <img src="./Img/Logo.png" alt="Logo">
+                <strong class="logo-text">ԻՆՔՆՈՒԹՅՈՒՆ</strong>
+            </a>
+            <nav class="navbar">
+                <ul class="list-reset menu-ul-first">
+                    <li>
+                        <div class="menu-link-hover">
+                            <div class="videolibrary" onclick="myMenuFunction()">
+                                <a href="#" class="menu-link menu-link-videolibrary">ՏԵՍԱԴԱՐԱՆ
+                                    <i class="fa-solid fa-angle-down down"></i></a>
+                            </div>
+                            <ul class="videolibrary-content list-reset" id="videolibrary-content">
+                                <li><a href="gallery.html" class="videolibrary-services">ՃԱՆԱՉԵՆՔ ՀԱՅԱՍՏԱՆԸ</a></li>
+                                <li><a href="gallery.html" class="videolibrary-services">ԱՎԱՆԴՈՒՅԹՆԵՐ</a></li>
+                                <li><a href="gallery.html" class="videolibrary-services">ՊԱՏՄՈՒԹՅՈՒՆՆԵՐ</a></li>
+                                <li><a href="gallery.html" class="videolibrary-services">ԱԶԳԱՅԻՆ ԵՐԳ</a></li>
+                                <li><a href="gallery.html" class="videolibrary-services">ԱԶԳԱՅԻՆ ՊԱՐ</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="./fund.html">ՀԻՄՆԱԴՐԱՄ</a></li>
+                    <li><a href="#" class="menu-active">ԿԱՊ</a></li>
+                </ul>
+            </nav>
+            <ul class="list-reset menu-ul">
+                <li>
+                    <div class="menu-link-hover">
+                        <div class="language" onclick="myLanguageFunction()">
+                            <a href="#" class="menu-link menu-link-language"><i class="fa-solid fa-globe"></i>
+                                <i class="fa-solid fa-angle-down down"></i></a>
+                        </div>
+                        <ul class="language-content list-reset" id="language-content">
+                            <li><a href="#" class="language-services">
+                                    <div class="flag-armenia"></div>
+                                </a></li>
+                            <li><a href="#" class="language-services">
+                                    <div class="flag-usa"></div>
+                                </a></li>
+                            <li><a href="#" class="language-services">
+                                    <div class="flag-russia"></div>
+                                </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><button class="button-header"><a href="donation.html"><span>ՆՎԻՐԱԲԵՐԵԼ</span></a></button></li>
+            </ul>
+            <button class="burger">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
+        </div>
+    </header>
+    <div class="contacticons">
+        <div class="twitter"><a href="https://x.com/?lang=ru" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <div class="instagram"><a href="https://www.instagram.com/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="facebook"><a href="https://www.facebook.com/identity.armenia/?_rdr" target="_blank"><i
+                    class="fa-brands fa-facebook"></i></a></div>
+        <div class="linkedin"><a
+                href="https://www.linkedin.com/login/ru?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
+                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+    </div>
+
+    <main class="main">
+        <div class="main__overlay"></div>
+        <section class="contact-section1">
+            <div class="contact-section1container container">
+                <h2>ԿԱՊ</h2>
+                <div class="contact">
+                    <ul class="contact-ul list-reset">
+                        <li><a href="./index.html">Գլխավոր <i class="fa-solid fa-chevron-right"></i> </a></li>
+                    </ul>
+                    <ul class="contact-ul-contact list-reset">
+                        <li> <a href="#"> Կապ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section2">
+            <div class="contact-section2container">
+                <div class="contact-section2-first">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contactform">
+                        <input type="hidden" name="access_key" value="53a3c34a-18a5-4ba3-9c27-eef8b72864af">
+                        <div class="input-field">
+                            <i class="fa-regular fa-user"></i>
+                            <input type="text" name="email" placeholder="Անուն Ազգանուն" class="nameinput" required>
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="email" name="email" placeholder="էլ-փոստ" class="emailinput" required>
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="tel" name="email" placeholder="+374 00 000 000" class="phoneinput" required>
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-regular fa-message"></i>
+                            <input type="text" name="email" placeholder="Թեմա" class="themeinput" required>
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-regular fa-comments"></i>
+                            <textarea name="email" placeholder="Նամակ" class="messageinput" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">ՈՒՂԱՐԿԵԼ</button>
+                    </form>
+                </div>
+                <div class="contact-section2-second">
+                    <div class="contact-text">
+                        <p>Նոր առաջարկների, հանգանակության, համագործակցության և այլ հարցերով կապվեք մեզ հետ նշված
+                            հեռախոսահամարով, էլ․-փոստով, կամ լրացրեք հայտը</p>
+                    </div>
+                    <div class="contact-information">
+                        <ul class="list-reset list-reset-button">
+                            <a href="tel:+374-00-00-00" class="button  phone">+374-00-00-00</a>
+                            <a href="mailto:gagikidentity@gmail.com" class="button  email">gagikidentity@gmail.com</a>
+                            <a href="#" class="button  location">RA, Yerevan, Road 00</a>
+                            <div class="socialcontact-icons">
+                                <div class="contact-icons"><a href="https://x.com/?lang=ru" target="_blank"><i
+                                            class="fa-brands fa-x-twitter"></i></a></div>
+                                <div class="contact-icons"><a href="https://www.instagram.com/" target="_blank"><i
+                                            class="fa-brands fa-instagram"></i></i></a></div>
+                                <div class="contact-icons"><a href="https://www.facebook.com/identity.armenia/?_rdr"
+                                        target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+                                <div class="contact-icons"><a
+                                        href="https://www.linkedin.com/login/ru?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
+                                        target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container-footer container">
+            <div class="footer-content1">
+                <a href="./index.html">
+                    <div class="headerlogo"></div>
+                </a>
+                <div class="text footer-text">
+                    <p>Կարճ ինֆո այստեղ։ Eu egestas imperdiet consectetur egestas ante aliquet posuere vitae.</p>
+                </div>
+            </div>
+            <div class="footer-content2">
+                <h3 class="footer-title">ՀԻՄՆԱԴՐԱՄ</h3>
+                <ul class="list-reset">
+                    <li class="footer-lists"><a href="#">ՄԵՐ ՄԱՍԻՆ</a></li>
+                    <li class="footer-lists"><a href="#">ԽՆԴԻՐԸ</a></li>
+                    <li class="footer-lists"><a href="#">ՀՈԳԱԲԱՐՁՈՒՆԵՐԻ ԽՈՐՀՈՒՐԴ</li>
+                    <li class="footer-lists"><a href="#">ԹԻՄԸ</a></li>
+                    <li class="footer-lists"><a href="#">ԱՋԱԿԻՑՆԵՐ</a></li>
+                    <li class="footer-lists"><a href="#">ՆԱԽԱԳԻԾ</a></li>
+                </ul>
+            </div>
+            <div class="footer-content2">
+                <h3 class="footer-title">ՏԵՍԱԴԱՐԱՆ</h3>
+                <ul class="list-reset">
+                    <li class="footer-lists"><a href="#">ՃԱՆԱՉԵՆՔ ՀԱՅԱՍՏԱՆԸ</a></li>
+                    <li class="footer-lists"><a href="#">ԱՎԱՆԴՈՒՅԹՆԵՐ</a></li>
+                    <li class="footer-lists"><a href="#">ՊԱՏՄՈՒԹՅՈՒՆՆԵՐ</a></li>
+                    <li class="footer-lists"><a href="#">ԱԶԳԱՅԻՆ ԵՐԳ</a></li>
+                    <li class="footer-lists"><a href="#">ԱԶԳԱՅԻՆ ՊԱՐ</a></li>
+                </ul>
+            </div>
+            <div class="footer-content2">
+                <h3 class="footer-title">ԿԱՊ</h3>
+                <ul class="list-reset list-reset-button">
+                    <a href="tel:+374-00-00-00" class="button  phone">+374-00-00-00</a>
+                    <a href="mailto:gagikidentity@gmail.com" class="button  email">gagikidentity@gmail.com</a>
+                    <a href="#" class="button  location">RA, Yerevan, Road 00</a>
+                    <div class="footer-icons">
+                        <div class="social-icons"><a href="https://x.com/?lang=ru" target="_blank"><i
+                                    class="fa-brands fa-x-twitter"></i></a></div>
+                        <div class="social-icons"><a href="https://www.instagram.com/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></i></a></div>
+                        <div class="social-icons"><a href="https://www.facebook.com/identity.armenia/?_rdr"
+                                target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+                        <div class="social-icons"><a
+                                href="https://www.linkedin.com/login/ru?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
+                                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="footer-content2">
+                <h3 class="footer-title">ԲԱԺԱՆԱՐԴԱԳՐՈՒԹՅՈՒՆ</h3>
+                <ul class="list-reset ">
+                    <p>Ստացեք հիմնադրամի նորությունները և նախագծի կարևոր թարմացումներն էլ-փոստով</p>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="footerform">
+                        <input type="hidden" name="access_key" value="53a3c34a-18a5-4ba3-9c27-eef8b72864af">
+                        <input type="email" name="email" placeholder="էլ-փոստ" class="emailinput" required>
+                        <button type="submit" class="subscribe-button">ԲԱԺԱՆՈՐԴԱԳՐՎԵԼ</button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="container-deepfooter container">
+            <p>© «Ինքնություն», Հիմնադրամ <span class="copyright" id="copyright"></span></p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
