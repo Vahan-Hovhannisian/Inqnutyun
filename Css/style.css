@@ -1793,7 +1793,7 @@ swiper-container {
   isolation: isolate;
 
   &::before {
-    content: url(./Img/gray-logo.png);
+    content: url(../Img/gray-logo.png);
     position: absolute;
     top: 0;
     left: 0;
