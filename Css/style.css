@@ -1603,7 +1603,7 @@ swiper-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100px, 100%), 1fr));
   gap: 25px;
-  margin-block-end: 50px;
+  margin-block-end: 90px;
 }
 
 .fund-first-list li:nth-child(1) {
@@ -1620,6 +1620,29 @@ swiper-container {
 
 .fund-first-list li:nth-child(5) {
   margin-block-start: 70px;
+}
+
+.fund-last-list {
+
+  & li:nth-child(1) {
+    transform: translateY(-35px);
+  }
+
+  & li:nth-child(2) {
+    transform: translateY(20px);
+  }
+
+  & li:nth-child(3) {
+    transform: translateY(62px);
+  }
+
+  & li:nth-child(4) {
+    transform: translateY(27px);
+  }
+
+  & li:nth-child(5) {
+    transform: translateY(-35px);
+  }
 }
 
 .fund-tab-content-information-wrapper-list-item {
