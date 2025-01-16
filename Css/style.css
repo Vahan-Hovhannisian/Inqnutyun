@@ -395,15 +395,23 @@ footer {
   padding: 20px 0px;
 }
 
-.footer-content2,
-.footer-content1 {}
+.footer-content2 {
+
+
+  & input {
+    margin-block: 20px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid #000;
+  }
+}
 
 .footer-title {
+  margin-block-end: 20px;
   color: #781214;
   font-size: 20px;
   line-height: 100%;
   letter-spacing: -2.20px;
-
 }
 
 .footer-lists {
