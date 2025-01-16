@@ -1711,7 +1711,7 @@ swiper-container {
 }
 
 .fund-tab-content-information-img {
-  margin-block-end: 10%;
+  margin-block-end: 16%;
 }
 
 .fund-tab-content-information-list-way {
@@ -1737,7 +1737,7 @@ swiper-container {
     left: -25px;
     padding-inline-start: 10px;
     z-index: -1;
-    color: #e0dddd;
+    color: #f0e9e9;
     font-size: 100px;
     font-weight: 700;
   }
