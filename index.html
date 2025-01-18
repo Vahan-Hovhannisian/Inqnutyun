@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="./Css/style.css">
     <link rel="stylesheet" href="./videotube/videotube.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./Css/slider.css">
+
 </head>
 
 <body>
@@ -42,37 +43,39 @@
                 </ul>
 
             </nav>
-            <ul class="list-reset menu-ul">
-                <li>
-                    <div class="menu-link-hover">
-                        <div class="language" onclick="myLanguageFunction()">
-                            <a href="#" class="menu-link menu-link-language"><i class="fa-solid fa-globe"></i>
-                                <i class="fa-solid fa-angle-down down"></i></a>
+            <div class="burger-menu">
+                <ul class="list-reset menu-ul">
+                    <li>
+                        <div class="menu-link-hover">
+                            <div class="language" onclick="myLanguageFunction()">
+                                <a href="#" class="menu-link menu-link-language"><i class="fa-solid fa-globe"></i>
+                                    <i class="fa-solid fa-angle-down down"></i></a>
+                            </div>
+                            <ul class="language-content list-reset" id="language-content">
+                                <li><a href="#" class="language-services">
+                                        <div class="flag-armenia"></div>
+                                    </a></li>
+                                <li><a href="#" class="language-services">
+                                        <div class="flag-usa"></div>
+                                    </a></li>
+                                <li><a href="#" class="language-services">
+                                        <div class="flag-russia"></div>
+                                    </a></li>
+                            </ul>
                         </div>
-                        <ul class="language-content list-reset" id="language-content">
-                            <li><a href="#" class="language-services">
-                                    <div class="flag-armenia"></div>
-                                </a></li>
-                            <li><a href="#" class="language-services">
-                                    <div class="flag-usa"></div>
-                                </a></li>
-                            <li><a href="#" class="language-services">
-                                    <div class="flag-russia"></div>
-                                </a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="donation.html" class="button-header">
-                        ՆՎԻՐԱԲԵՐԵԼ
-                    </a>
-                </li>
-            </ul>
-            <button class="burger">
-                <span class="burger__line"></span>
-                <span class="burger__line"></span>
-                <span class="burger__line"></span>
-            </button>
+                    </li>
+                    <li>
+                        <a href="donation.html" class="button-header">
+                            ՆՎԻՐԱԲԵՐԵԼ
+                        </a>
+                    </li>
+                </ul>
+                <button class="burger">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+            </div>
         </div>
     </header>
     <div class="contacticons">
@@ -89,40 +92,53 @@
     </div>
     <main class="main">
         <div class="main__overlay"></div>
-        <section class="main-section1">
+        <section class="main-section1" style="background-image: url(./Img/section1img.jpg);">
             <div class="main-section1container container">
-                <h1>ԻՆՔՆՈՒԹՅՈՒՆ</h1>
-                <h2>ԻՆՔՆՈՒԹՅԱՆ ՍԱՐԴԱՐԱՊԱՏՈՒՄ ՀԱՂԹԱՆԱԿՆ ԱՅԼԸՆՏՐԱՆՔ ՉՈՒՆԻ</h2>
-                <a href="https://youtu.be/2hw1VcMyuWI?si=f6RDIh-UWR63WSji" class="tube"><button class="videobutton">
-                        <i class="fa-solid fa-play playicon"></i>ԴԻՏԵԼ ՏԵՍԱՆՅՈՒԹԸ</button></a>
+                <h1 class="main-section-title title">ԻՆՔՆՈՒԹՅԱՆ ՍԱՐԴԱՐԱՊԱՏՈՒՄ ՀԱՂԹԱՆԱԿՆ ԱՅԼԸՆՏՐԱՆՔ ՉՈՒՆԻ</h1>
+                <a href="https://youtu.be/2hw1VcMyuWI?si=f6RDIh-UWR63WSji" class="tube">
+                    <button class="videobutton">
+                        <img src="./Img/playIcon.png" alt="playIcon">
+                        ԴԻՏԵԼ ՏԵՍԱՆՅՈՒԹԸ
+                    </button>
+                </a>
             </div>
         </section>
         <section class="main-section2">
             <div class="main-section2container container">
                 <h2>ԱՄԵՆԱՇԱՏ ԴԻՏՎԱԾ</h2>
+                <div class="swiper tranding-slider">
+                    <div class="swiper-wrapper">
+                        <!-- Slide-start -->
+                        <div class="swiper-slide">
+                            <video controls class="tranding-video"
+                                src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4">
+                            </video>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide">
+                            <video controls class="tranding-video"
+                                src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4">
+                            </video>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide">
+                            <video controls class="tranding-video"
+                                src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4">
+                            </video>
+                        </div>
+                        <!-- Slide-end -->
+                    </div>
+                    <div class="tranding-slider-control">
+                        <div class="swiper-button-prev slider-arrow">
+                        </div>
+                        <div class="swiper-button-next slider-arrow">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <swiper-container class="myswiper" slides-per-view="3" centered-slides="true" space-between="30"
-                pagination="true" pagination-type="fraction" navigation="true" autoplay-delay="1500"
-                autoplay-disable-on-interaction="true" loop="true">
-                <swiper-slide><img src="./Img/nature.png">
-                    <div class="pojectname">ՆԱԽԱԳԾԻ ԱՆՎԱՆՈՒՄԸ</div>
-                </swiper-slide>
-                <swiper-slide><img src="./Img/section1img.png">
-                    <div class="pojectname">ՆԱԽԱԳԾԻ ԱՆՎԱՆՈՒՄԸ</div>
-                </swiper-slide>
-                <swiper-slide><img src="./Img/nature.png">
-                    <div class="pojectname">ՆԱԽԱԳԾԻ ԱՆՎԱՆՈՒՄԸ</div>
-                </swiper-slide>
-                <swiper-slide><img src="./Img/section1img.png">
-                    <div class="pojectname">ՆԱԽԱԳԾԻ ԱՆՎԱՆՈՒՄԸ</div>
-                </swiper-slide>
-                <swiper-slide><img src="./Img/nature.png">
-                    <div class="pojectname">ՆԱԽԱԳԾԻ ԱՆՎԱՆՈՒՄԸ</div>
-                </swiper-slide>
-                <swiper-slide><img src="./Img/section1img.png">
-                    <div class="pojectname">ՆԱԽԱԳԾԻ ԱՆՎԱՆՈՒՄԸ</div>
-                </swiper-slide>
-            </swiper-container>
+
         </section>
         <section class="main-section3">
             <div class="main-section3container container">
@@ -1128,9 +1144,10 @@
             <p>© «Ինքնություն», Հիմնադրամ <span class="copyright" id="copyright"></span></p>
         </div>
     </footer>
+
+    <script src="./swiper.js"></script>
     <script src="./script.js"></script>
     <script src="./videotube/videotube.min.js"></script>
-    <script src="./swiperlibrary.js"></script>
 
 </body>
 

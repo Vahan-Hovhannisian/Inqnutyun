@@ -72,6 +72,7 @@ function myLanguageFunction() {
 
 
 const header = document.querySelector(".header");
+const headerScroll = document.createElement("div");
 const nav = document.querySelector(".navbar");
 const burger = document.querySelector(".burger");
 const overlay = document.querySelector(".main__overlay");
@@ -80,11 +81,17 @@ const coinsBtn = document.querySelectorAll(".donation__coins");
 const idramBtn = document.querySelectorAll(".donation__button-idram");
 
 
-document.querySelectorAll(".nav__link").forEach((link) => {
-    if (link.href === window.location.href) {
-        link.classList.add("nav__link_active");
-    }
+
+headerScroll.setAttribute("data-scroll", "");
+header.before(headerScroll);
+
+const headerObserver = new IntersectionObserver((entries) => {
+    header.classList.toggle("header__scroll", !entries[0].isIntersecting);
+}, {
+    rootMargin: "100px 0px 0px 0px",
 });
+
+headerObserver.observe(headerScroll);
 
 document.body.addEventListener("click", (e) => {
     if (e.target === overlay) {
@@ -146,3 +153,22 @@ if (coinsBtn && idramBtn) {
         });
     });
 }
+
+
+var TrandingSlider = new Swiper('.tranding-slider', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2.5,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
