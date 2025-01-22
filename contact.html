@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="./Css/style.css">
     <link rel="stylesheet" href="./videotube/videotube.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
     <header class="header">
         <div class="container-header container">
             <a class="logo" href="./index.html">
-                <img src="./Img/Logo.png" alt="Logo">
+                <svg class="logo-icon">
+                    <use xlink:href="./Img/sprite.svg#Logo" />
+                </svg>
                 <strong class="logo-text">ԻՆՔՆՈՒԹՅՈՒՆ</strong>
             </a>
             <nav class="navbar">
@@ -38,58 +39,88 @@
                         </div>
                     </li>
                     <li><a href="./fund.html">ՀԻՄՆԱԴՐԱՄ</a></li>
-                    <li><a href="#" class="menu-active">ԿԱՊ</a></li>
+                    <li><a href="./contact.html">ԿԱՊ</a></li>
                 </ul>
+
             </nav>
-            <ul class="list-reset menu-ul">
-                <li>
-                    <div class="menu-link-hover">
-                        <div class="language" onclick="myLanguageFunction()">
-                            <a href="#" class="menu-link menu-link-language"><i class="fa-solid fa-globe"></i>
-                                <i class="fa-solid fa-angle-down down"></i></a>
+            <div class="burger-menu">
+                <ul class="list-reset menu-ul">
+                    <li>
+                        <div class="menu-link-hover">
+                            <div class="language" onclick="myLanguageFunction()">
+                                <a href="#" class="menu-link menu-link-language"><i class="fa-solid fa-globe"></i>
+                                    <i class="fa-solid fa-angle-down down"></i></a>
+                            </div>
+                            <ul class="language-content list-reset" id="language-content">
+                                <li><a href="#" class="language-services">
+                                        <div class="flag-armenia"></div>
+                                    </a></li>
+                                <li><a href="#" class="language-services">
+                                        <div class="flag-usa"></div>
+                                    </a></li>
+                                <li><a href="#" class="language-services">
+                                        <div class="flag-russia"></div>
+                                    </a></li>
+                            </ul>
                         </div>
-                        <ul class="language-content list-reset" id="language-content">
-                            <li><a href="#" class="language-services">
-                                    <div class="flag-armenia"></div>
-                                </a></li>
-                            <li><a href="#" class="language-services">
-                                    <div class="flag-usa"></div>
-                                </a></li>
-                            <li><a href="#" class="language-services">
-                                    <div class="flag-russia"></div>
-                                </a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="donation.html" class="button-header">
-                        ՆՎԻՐԱԲԵՐԵԼ
-                    </a></li>
-            </ul>
-            <button class="burger">
-                <span class="burger__line"></span>
-                <span class="burger__line"></span>
-                <span class="burger__line"></span>
-            </button>
+                    </li>
+                    <li>
+                        <a href="donation.html" class="button-header">
+                            ՆՎԻՐԱԲԵՐԵԼ
+                        </a>
+                    </li>
+                </ul>
+                <button class="burger">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+            </div>
         </div>
     </header>
-    <div class="contacticons">
-        <div class="twitter"><a href="https://x.com/?lang=ru" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-        </div>
-        <div class="instagram"><a href="https://www.instagram.com/" target="_blank"><i
-                    class="fa-brands fa-instagram"></i></a>
-        </div>
-        <div class="facebook"><a href="https://www.facebook.com/identity.armenia/?_rdr" target="_blank"><i
-                    class="fa-brands fa-facebook"></i></a></div>
-        <div class="linkedin"><a
-                href="https://www.linkedin.com/login/ru?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
-                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
-    </div>
+    <ul class="header-socials-list">
+        <li class="header-socials-item">
+            <a class="header-socials-link" href="#" target="_blank">
+                <svg class="header-socials-icon">
+                    <use xlink:href="./Img/sprite.svg#twitter" />
+                </svg>
+            </a>
+        </li>
+        <li class="header-socials-item">
+            <a class="header-socials-link" href="#" target="_blank">
+                <svg class="header-socials-icon">
+                    <use xlink:href="./Img/sprite.svg#instagram" />
+                </svg>
+            </a>
+        </li>
+        <li class="header-socials-item">
+            <a class="header-socials-link" href="#" target="_blank">
+                <svg class="header-socials-icon">
+                    <use xlink:href="./Img/sprite.svg#facebook" />
+                </svg>
+            </a>
+        </li>
+        <li class="header-socials-item">
+            <a class="header-socials-link" href="#" target="_blank">
+                <svg class="header-socials-icon">
+                    <use xlink:href="./Img/sprite.svg#linkedin" />
+                </svg>
+            </a>
+        </li>
+        <li class="header-socials-item">
+            <a class="header-socials-link" href="#" target="_blank">
+                <svg class="header-socials-icon">
+                    <use xlink:href="./Img/sprite.svg#sideYoutube" />
+                </svg>
+            </a>
+        </li>
+    </ul>
 
     <main class="main">
         <div class="main__overlay"></div>
-        <section class="contact-section1">
+        <section class="contact-section1" style="background-image: url('./Img/contactimg.png');">
             <div class="contact-section1container container">
-                <h2>ԿԱՊ</h2>
+                <h1 class="contact-section1title title">ԿԱՊ</h1>
                 <div class="contact">
                     <ul class="contact-ul list-reset">
                         <li><a href="./index.html">Գլխավոր <i class="fa-solid fa-chevron-right"></i> </a></li>
@@ -103,123 +134,260 @@
         <section class="contact-section2">
             <div class="contact-section2container">
                 <div class="contact-section2-first">
-                    <form action="https://api.web3forms.com/submit" method="POST" class="contactform">
-                        <input type="hidden" name="access_key" value="53a3c34a-18a5-4ba3-9c27-eef8b72864af">
-                        <div class="input-field">
-                            <i class="fa-regular fa-user"></i>
-                            <input type="text" name="email" placeholder="Անուն Ազգանուն" class="nameinput" required>
-                        </div>
-                        <div class="input-field">
-                            <i class="fa-regular fa-envelope"></i>
-                            <input type="email" name="email" placeholder="էլ-փոստ" class="emailinput" required>
-                        </div>
-                        <div class="input-field">
-                            <i class="fa-solid fa-phone"></i>
-                            <input type="tel" name="email" placeholder="+374 00 000 000" class="phoneinput" required>
-                        </div>
-                        <div class="input-field">
-                            <i class="fa-regular fa-message"></i>
-                            <input type="text" name="email" placeholder="Թեմա" class="themeinput" required>
-                        </div>
-                        <div class="input-field">
-                            <i class="fa-regular fa-comments"></i>
+                    <form class="contactform" action="#" method="POST">
+                        <label class="form-lable">
+                            <svg class="form-lable-icon">
+                                <use xlink:href="./Img/sprite.svg#user" />
+                            </svg>
+                            <input class="form-input" type="text" name="email" placeholder="Անուն Ազգանուն"
+                                class="nameinput" required>
+                        </label>
+                        <label class="form-lable">
+                            <svg class="form-lable-icon">
+                                <use xlink:href="./Img/sprite.svg#email" />
+                            </svg>
+                            <input class="form-input" type="email" name="email" placeholder="էլ-փոստ" class="emailinput"
+                                required>
+                        </label>
+                        <label class="form-lable">
+                            <svg class="form-lable-icon">
+                                <use xlink:href="./Img/sprite.svg#phone" />
+                            </svg>
+                            <input class="form-input" type="tel" name="email" placeholder="+374 00 000 000"
+                                class="phoneinput" required>
+                        </label>
+                        <label class="form-lable">
+                            <svg class="form-lable-icon">
+                                <use xlink:href="./Img/sprite.svg#sms" />
+                            </svg>
+                            <input class="form-input" type="text" name="email" placeholder="Թեմա" class="themeinput"
+                                required>
+                        </label>
+                        <label class="form-lable">
+                            <svg class="form-lable-icon">
+                                <use xlink:href="./Img/sprite.svg#massage" />
+                            </svg>
                             <textarea name="email" placeholder="Նամակ" class="messageinput" rows="5"></textarea>
-                        </div>
+                        </label>
                         <button type="submit" class="submit-button">ՈՒՂԱՐԿԵԼ</button>
                     </form>
                 </div>
                 <div class="contact-section2-second">
-                    <div class="contact-text">
-                        <p>Նոր առաջարկների, հանգանակության, համագործակցության և այլ հարցերով կապվեք մեզ հետ նշված
-                            հեռախոսահամարով, էլ․-փոստով, կամ լրացրեք հայտը</p>
-                    </div>
-                    <div class="contact-information">
-                        <ul class="list-reset list-reset-button">
-                            <a href="tel:+374-00-00-00" class="button  phone">+374-00-00-00</a>
-                            <a href="mailto:gagikidentity@gmail.com" class="button  email">gagikidentity@gmail.com</a>
-                            <a href="#" class="button  location">RA, Yerevan, Road 00</a>
-                            <div class="socialcontact-icons">
-                                <div class="contact-icons"><a href="https://x.com/?lang=ru" target="_blank"><i
-                                            class="fa-brands fa-x-twitter"></i></a></div>
-                                <div class="contact-icons"><a href="https://www.instagram.com/" target="_blank"><i
-                                            class="fa-brands fa-instagram"></i></i></a></div>
-                                <div class="contact-icons"><a href="https://www.facebook.com/identity.armenia/?_rdr"
-                                        target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
-                                <div class="contact-icons"><a
-                                        href="https://www.linkedin.com/login/ru?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
-                                        target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
-                        </ul>
-                    </div>
+                    <p class="contact-text">Նոր առաջարկների, հանգանակության, համագործակցության և այլ հարցերով կապվեք
+                        մեզ հետ նշված
+                        հեռախոսահամարով, էլ․-փոստով, կամ լրացրեք հայտը
+                    </p>
+                    <ul class="footer-contact-list">
+                        <li class="footer-contact-item">
+                            <a class="footer-contact-link" href="tel:+374-00-00-00">
+                                <svg class="footer-contact-icon">
+                                    <use xlink:href="./Img/sprite.svg#phone" />
+                                </svg>
+                                +374 00 000-000
+                            </a>
+                        </li>
+                        <li class="footer-contact-item">
+                            <a class="footer-contact-link" href="mailto:z5C5o@example.com">
+                                <svg class="footer-contact-icon">
+                                    <use xlink:href="./Img/sprite.svg#email" />
+                                </svg>
+                                gagikidentity@gmail.com
+                            </a>
+                        </li>
+                        <li class="footer-contact-item">
+                            <a class="footer-contact-link" href="#">
+                                <svg class="footer-contact-icon">
+                                    <use xlink:href="./Img/sprite.svg#location" />
+                                </svg>
+                                RA, Yerevan, Road 00
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer-socials-list">
+                        <li class="footer-socials-item">
+                            <a class="footer-socials-link" href="#" target="_blank">
+                                <svg class="footer-socials-icon">
+                                    <use xlink:href="./Img/sprite.svg#twitter" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-socials-item">
+                            <a class="footer-socials-link" href="#" target="_blank">
+                                <svg class="footer-socials-icon">
+                                    <use xlink:href="./Img/sprite.svg#instagram" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-socials-item">
+                            <a class="footer-socials-link" href="#" target="_blank">
+                                <svg class="footer-socials-icon">
+                                    <use xlink:href="./Img/sprite.svg#facebook" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-socials-item">
+                            <a class="footer-socials-link" href="#" target="_blank">
+                                <svg class="footer-socials-icon">
+                                    <use xlink:href="./Img/sprite.svg#linkedin" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-socials-item">
+                            <a class="footer-socials-link" href="#" target="_blank">
+                                <svg class="footer-socials-icon">
+                                    <use xlink:href="./Img/sprite.svg#youtube" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="container-footer container">
+        <div class="container-footer ">
             <div class="footer-content1">
-                <a href="./index.html">
-                    <div class="headerlogo"></div>
+                <a class="logo" href="./index.html">
+                    <svg class="logo-icon">
+                        <use xlink:href="./Img/sprite.svg#Logo" />
+                    </svg>
+                    <strong class="logo-text">ԻՆՔՆՈՒԹՅՈՒՆ</strong>
                 </a>
-                <div class="text footer-text">
-                    <p>Կարճ ինֆո այստեղ։ Eu egestas imperdiet consectetur egestas ante aliquet posuere vitae.</p>
-                </div>
+                <p class="footer-text">Կարճ ինֆո այստեղ։ Eu egestas imperdiet consectetur egestas ante aliquet posuere
+                    vitae.</p>
             </div>
             <div class="footer-content2">
-                <h3 class="footer-title">ՀԻՄՆԱԴՐԱՄ</h3>
-                <ul class="list-reset">
-                    <li class="footer-lists"><a href="#">ՄԵՐ ՄԱՍԻՆ</a></li>
-                    <li class="footer-lists"><a href="#">ԽՆԴԻՐԸ</a></li>
-                    <li class="footer-lists"><a href="#">ՀՈԳԱԲԱՐՁՈՒՆԵՐԻ ԽՈՐՀՈՒՐԴ</li>
-                    <li class="footer-lists"><a href="#">ԹԻՄԸ</a></li>
-                    <li class="footer-lists"><a href="#">ԱՋԱԿԻՑՆԵՐ</a></li>
-                    <li class="footer-lists"><a href="#">ՆԱԽԱԳԻԾ</a></li>
+                <h3 class="footer-title">Հիմնադրամ</h3>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            Մեր մասին
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            Խնդիրը
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            Հոգաբարձուների խորհուրդ
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            Թիմը
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            Աջակիցներ
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            Նախագիծ
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="footer-content2">
                 <h3 class="footer-title">ՏԵՍԱԴԱՐԱՆ</h3>
                 <ul class="list-reset">
-                    <li class="footer-lists"><a href="#">ՃԱՆԱՉԵՆՔ ՀԱՅԱՍՏԱՆԸ</a></li>
-                    <li class="footer-lists"><a href="#">ԱՎԱՆԴՈՒՅԹՆԵՐ</a></li>
-                    <li class="footer-lists"><a href="#">ՊԱՏՄՈՒԹՅՈՒՆՆԵՐ</a></li>
-                    <li class="footer-lists"><a href="#">ԱԶԳԱՅԻՆ ԵՐԳ</a></li>
-                    <li class="footer-lists"><a href="#">ԱԶԳԱՅԻՆ ՊԱՐ</a></li>
+                    <li class="footer-item"><a class="footer-link" href="#">ՃԱՆԱՉԵՆՔ ՀԱՅԱՍՏԱՆԸ</a></li>
+                    <li class="footer-item"><a class="footer-link" href="#">ԱՎԱՆԴՈՒՅԹՆԵՐ</a></li>
+                    <li class="footer-item"><a class="footer-link" href="#">ՊԱՏՄՈՒԹՅՈՒՆՆԵՐ</a></li>
+                    <li class="footer-item"><a class="footer-link" href="#">ԱԶԳԱՅԻՆ ԵՐԳ</a></li>
+                    <li class="footer-item"><a class="footer-link" href="#">ԱԶԳԱՅԻՆ ՊԱՐ</a></li>
                 </ul>
             </div>
             <div class="footer-content2">
                 <h3 class="footer-title">ԿԱՊ</h3>
-                <ul class="list-reset list-reset-button">
-                    <a href="tel:+374-00-00-00" class="button  phone">+374-00-00-00</a>
-                    <a href="mailto:gagikidentity@gmail.com" class="button  email">gagikidentity@gmail.com</a>
-                    <a href="#" class="button  location">RA, Yerevan, Road 00</a>
-                    <div class="footer-icons">
-                        <div class="social-icons"><a href="https://x.com/?lang=ru" target="_blank"><i
-                                    class="fa-brands fa-x-twitter"></i></a></div>
-                        <div class="social-icons"><a href="https://www.instagram.com/" target="_blank"><i
-                                    class="fa-brands fa-instagram"></i></i></a></div>
-                        <div class="social-icons"><a href="https://www.facebook.com/identity.armenia/?_rdr"
-                                target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
-                        <div class="social-icons"><a
-                                href="https://www.linkedin.com/login/ru?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
-                                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
-                    </div>
+                <ul class="footer-contact-list">
+                    <li class="footer-contact-item">
+                        <a class="footer-contact-link" href="tel:+374-00-00-00">
+                            <svg class="footer-contact-icon">
+                                <use xlink:href="./Img/sprite.svg#phone" />
+                            </svg>
+                            +374 00 000-000
+                        </a>
+                    </li>
+                    <li class="footer-contact-item">
+                        <a class="footer-contact-link" href="mailto:z5C5o@example.com">
+                            <svg class="footer-contact-icon">
+                                <use xlink:href="./Img/sprite.svg#email" />
+                            </svg>
+                            gagikidentity@gmail.com
+                        </a>
+                    </li>
+                    <li class="footer-contact-item">
+                        <a class="footer-contact-link" href="#">
+                            <svg class="footer-contact-icon">
+                                <use xlink:href="./Img/sprite.svg#location" />
+                            </svg>
+                            RA, Yerevan, Road 00
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer-socials-list">
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#" target="_blank">
+                            <svg class="footer-socials-icon">
+                                <use xlink:href="./Img/sprite.svg#twitter" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#" target="_blank">
+                            <svg class="footer-socials-icon">
+                                <use xlink:href="./Img/sprite.svg#instagram" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#" target="_blank">
+                            <svg class="footer-socials-icon">
+                                <use xlink:href="./Img/sprite.svg#facebook" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#" target="_blank">
+                            <svg class="footer-socials-icon">
+                                <use xlink:href="./Img/sprite.svg#linkedin" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#" target="_blank">
+                            <svg class="footer-socials-icon">
+                                <use xlink:href="./Img/sprite.svg#youtube" />
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
             <div class="footer-content2">
                 <h3 class="footer-title">ԲԱԺԱՆԱՐԴԱԳՐՈՒԹՅՈՒՆ</h3>
-                <ul class="list-reset ">
-                    <p>Ստացեք հիմնադրամի նորությունները և նախագծի կարևոր թարմացումներն էլ-փոստով</p>
-                    <form action="https://api.web3forms.com/submit" method="POST" class="footerform">
-                        <input type="hidden" name="access_key" value="53a3c34a-18a5-4ba3-9c27-eef8b72864af">
-                        <input type="email" name="email" placeholder="էլ-փոստ" class="emailinput" required>
-                        <button type="submit" class="subscribe-button">ԲԱԺԱՆՈՐԴԱԳՐՎԵԼ</button>
-                    </form>
-                </ul>
+                <p class="footer-text">
+                    Ստացեք հիմնադրամի նորությունները և նախագծի կարևոր թարմացումներն էլ-փոստով
+                </p>
+                <form class="footer-form" action="#" enctype="multipart/form-data" method="post">
+                    <label class="footer-form-label">
+                        <svg class="footer-form-icon">
+                            <use xlink:href="./Img/sprite.svg#email" />
+                        </svg>
+                        <input class="footer-form-input" type="email" placeholder="էլ-փոստ" required>
+                    </label>
+                    <button class="footer-form-button" type="submit">
+                        Բաժանորդագրվել
+                    </button>
+                </form>
             </div>
         </div>
-        <hr>
-        <div class="container-deepfooter container">
+        <div class="container-deepfooter">
             <p>© «Ինքնություն», Հիմնադրամ <span class="copyright" id="copyright"></span></p>
         </div>
     </footer>

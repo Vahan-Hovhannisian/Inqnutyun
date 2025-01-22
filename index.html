@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="am">
 
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./Css/style.css">
     <link rel="stylesheet" href="./videotube/videotube.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Css/swiper.css">
     <link rel="stylesheet" href="./Css/slider.css">
 
 </head>
@@ -18,7 +19,9 @@
     <header class="header">
         <div class="container-header container">
             <a class="logo" href="./index.html">
-                <img src="./Img/Logo.png" alt="Logo">
+                <svg class="logo-icon">
+                    <use xlink:href="./Img/sprite.svg#Logo" />
+                </svg>
                 <strong class="logo-text">ԻՆՔՆՈՒԹՅՈՒՆ</strong>
             </a>
             <nav class="navbar">
@@ -78,18 +81,43 @@
             </div>
         </div>
     </header>
-    <div class="contacticons">
-        <div class="twitter"><a href="https://x.com/?lang=ru" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-        </div>
-        <div class="instagram"><a href="https://www.instagram.com/" target="_blank"><i
-                    class="fa-brands fa-instagram"></i></a>
-        </div>
-        <div class="facebook"><a href="https://www.facebook.com/identity.armenia/?_rdr" target="_blank"><i
-                    class="fa-brands fa-facebook"></i></a></div>
-        <div class="linkedin"><a
-                href="https://www.linkedin.com/login/ru?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
-                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
-    </div>
+    <ul class="header-socials-list">
+        <li class="header-socials-item">
+            <a class="header-socials-link" href="#" target="_blank">
+                <svg class="header-socials-icon">
+                    <use xlink:href="./Img/sprite.svg#twitter" />
+                </svg>
+            </a>
+        </li>
+        <li class="header-socials-item">
+            <a class="header-socials-link" href="#" target="_blank">
+                <svg class="header-socials-icon">
+                    <use xlink:href="./Img/sprite.svg#instagram" />
+                </svg>
+            </a>
+        </li>
+        <li class="header-socials-item">
+            <a class="header-socials-link" href="#" target="_blank">
+                <svg class="header-socials-icon">
+                    <use xlink:href="./Img/sprite.svg#facebook" />
+                </svg>
+            </a>
+        </li>
+        <li class="header-socials-item">
+            <a class="header-socials-link" href="#" target="_blank">
+                <svg class="header-socials-icon">
+                    <use xlink:href="./Img/sprite.svg#linkedin" />
+                </svg>
+            </a>
+        </li>
+        <li class="header-socials-item">
+            <a class="header-socials-link" href="#" target="_blank">
+                <svg class="header-socials-icon">
+                    <use xlink:href="./Img/sprite.svg#sideYoutube" />
+                </svg>
+            </a>
+        </li>
+    </ul>
     <main class="main">
         <div class="main__overlay"></div>
         <section class="main-section1" style="background-image: url(./Img/section1img.jpg);">
@@ -105,35 +133,26 @@
         </section>
         <section class="main-section2">
             <div class="main-section2container container">
-                <h2>ԱՄԵՆԱՇԱՏ ԴԻՏՎԱԾ</h2>
-                <div class="swiper tranding-slider">
-                    <div class="swiper-wrapper">
-                        <!-- Slide-start -->
-                        <div class="swiper-slide">
-                            <video controls class="tranding-video"
-                                src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4">
-                            </video>
+                <h2 class="main-section2title universal-title">ԱՄԵՆԱՇԱՏ ԴԻՏՎԱԾ</h2>
+                <div class="slider-container">
+                    <div class="slider-content">
+                        <div class="slider-single">
+                            <img class="slider-single-image" src="https://picsum.photos/id/973/200/300" alt="1" />
                         </div>
-                        <!-- Slide-end -->
-                        <!-- Slide-start -->
-                        <div class="swiper-slide">
-                            <video controls class="tranding-video"
-                                src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4">
-                            </video>
+                        <div class="slider-single">
+                            <img class="slider-single-image" src="https://picsum.photos/id/974/200/300" alt="2" />
                         </div>
-                        <!-- Slide-end -->
-                        <!-- Slide-start -->
-                        <div class="swiper-slide">
-                            <video controls class="tranding-video"
-                                src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4">
-                            </video>
+                        <div class="slider-single">
+                            <img class="slider-single-image" src="https://picsum.photos/id/975/200/300" alt="3" />
                         </div>
-                        <!-- Slide-end -->
-                    </div>
-                    <div class="tranding-slider-control">
-                        <div class="swiper-button-prev slider-arrow">
+                        <div class="slider-single">
+                            <img class="slider-single-image" src="https://picsum.photos/id/976/200/300" alt="4" />
                         </div>
-                        <div class="swiper-button-next slider-arrow">
+                        <div class="slider-single">
+                            <img class="slider-single-image" src="https://picsum.photos/id/977/200/300" alt="5" />
+                        </div>
+                        <div class="slider-single">
+                            <img class="slider-single-image" src="https://picsum.photos/id/978/200/300" alt="6" />
                         </div>
                     </div>
                 </div>
@@ -142,7 +161,7 @@
         </section>
         <section class="main-section3">
             <div class="main-section3container container">
-                <h2>ՃԱՆԱՉԵՆՔ ՀԱՅԱՍՏԱՆԸ</h2>
+                <h2 class="main-section3title universal-title">ՃԱՆԱՉԵՆՔ ՀԱՅԱՍՏԱՆԸ</h2>
                 <div class="choosebutton">
                     <input class="radio" id="bolory" name="group" type="radio" checked>
                     <input class="radio" id="hh" name="group" type="radio">
@@ -193,7 +212,7 @@
                         </div>
                         <div class="panels">
                             <div class="panel" id="bolory-panel">
-                                <h3 class="region-name">ՀՀ ԵՎ ԱՐՑԱԽ</h3>
+                                <h3 class="region-name universal-title">ՀՀ ԵՎ ԱՐՑԱԽ</h3>
                                 <h4 class="region-sights"><span>24 </span> պատմամշակութային կոթող</h4>
                                 <div class="region-informations">
                                     <div class="region-information"><img src="./Img/area.png"><span>2704 քկմ</span>
@@ -210,68 +229,118 @@
                                         target="_blank">Վրաստանին</a>, արևելքում՝ <a
                                         href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
                                         target="_blank">Ադրբեջանին</a>։</p>
-                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
-                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
-                                    loop="true">
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
                                                 <source
                                                     src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
                                                     type="video/mp4">
                                             </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
-                                                <source src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4"
-                                                    type="video/mp4">
-                                            </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
-                                        </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
                                                 <source
                                                     src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
                                                     type="video/mp4">
                                             </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
-                                                <source src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4"
-                                                    type="video/mp4">
-                                            </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
-                                        </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
                                                 <source
                                                     src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
                                                     type="video/mp4">
                                             </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                </swiper-container>
-                                <button class="main-region-button"><a href="gallery.html"><span>ԱՆՑՆԵԼ
-                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <a href="gallery.html" class="main-region-button">
+                                    ԱՆՑՆԵԼ
+                                    ՏԵՍԱԴԱՐԱՆ
+                                    <svg class="main-region-button-arrow">
+                                        <use xlink:href="./Img/sprite.svg#arrow" />
+                                    </svg>
+                                </a>
                             </div>
                             <div class="panel" id="hh-panel">
-                                <h3 class="region-name">ՀՀ</h3>
+                                <h3 class="region-name universal-title">ՀՀ</h3>
                                 <h4 class="region-sights"><span>24 </span> պատմամշակութային կոթող</h4>
                                 <div class="region-informations">
                                     <div class="region-information"><img src="./Img/area.png"><span>2704 քկմ</span>
@@ -288,68 +357,118 @@
                                         target="_blank">Վրաստանին</a>, արևելքում՝ <a
                                         href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
                                         target="_blank">Ադրբեջանին</a>։</p>
-                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
-                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
-                                    loop="true">
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
                                                 <source
                                                     src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
                                                     type="video/mp4">
                                             </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
-                                                <source src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4"
-                                                    type="video/mp4">
-                                            </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
-                                        </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
                                                 <source
                                                     src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
                                                     type="video/mp4">
                                             </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
-                                                <source src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4"
-                                                    type="video/mp4">
-                                            </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
-                                        </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
                                                 <source
                                                     src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
                                                     type="video/mp4">
                                             </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                </swiper-container>
-                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
-                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <a href="gallery.html" class="main-region-button">
+                                    ԱՆՑՆԵԼ
+                                    ՏԵՍԱԴԱՐԱՆ
+                                    <svg class="main-region-button-arrow">
+                                        <use xlink:href="./Img/sprite.svg#arrow" />
+                                    </svg>
+                                </a>
                             </div>
                             <div class="panel" id="arcax-panel">
-                                <h3 class="region-name">ԱՐՑԱԽ</h3>
+                                <h3 class="region-name universal-title">ԱՐՑԱԽ</h3>
                                 <h4 class="region-sights"><span>24 </span> պատմամշակութային կոթող</h4>
                                 <div class="region-informations">
                                     <div class="region-information"><img src="./Img/area.png"><span>2704 քկմ</span>
@@ -366,68 +485,118 @@
                                         target="_blank">Վրաստանին</a>, արևելքում՝ <a
                                         href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
                                         target="_blank">Ադրբեջանին</a>։</p>
-                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
-                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
-                                    loop="true">
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
                                                 <source
                                                     src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
                                                     type="video/mp4">
                                             </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
-                                                <source src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4"
-                                                    type="video/mp4">
-                                            </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
-                                        </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
                                                 <source
                                                     src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
                                                     type="video/mp4">
                                             </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
-                                                <source src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4"
-                                                    type="video/mp4">
-                                            </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
-                                        </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
                                                 <source
                                                     src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
                                                     type="video/mp4">
                                             </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                </swiper-container>
-                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
-                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <a href="gallery.html" class="main-region-button">
+                                    ԱՆՑՆԵԼ
+                                    ՏԵՍԱԴԱՐԱՆ
+                                    <svg class="main-region-button-arrow">
+                                        <use xlink:href="./Img/sprite.svg#arrow" />
+                                    </svg>
+                                </a>
                             </div>
                             <div class="panel" id="aragacotn-panel">
-                                <h3 class="region-name">ԱՐԱԳԱԾՈՏՆԻ ՄԱՐԶ</h3>
+                                <h3 class="region-name universal-title">ԱՐԱԳԱԾՈՏՆԻ ՄԱՐԶ</h3>
                                 <h4 class="region-sights"><span>24 </span> պատմամշակութային կոթող</h4>
                                 <div class="region-informations">
                                     <div class="region-information"><img src="./Img/area.png"><span>2704 քկմ</span>
@@ -444,57 +613,118 @@
                                         target="_blank">Վրաստանին</a>, արևելքում՝ <a
                                         href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
                                         target="_blank">Ադրբեջանին</a>։</p>
-                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
-                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
-                                    loop="true">
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
                                                 <source
                                                     src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
                                                     type="video/mp4">
                                             </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
-                                                <source src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4"
-                                                    type="video/mp4">
-                                            </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
-                                        </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
                                                 <source
                                                     src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
                                                     type="video/mp4">
                                             </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
-                                                <source src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4"
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
                                                     type="video/mp4">
                                             </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                </swiper-container>
-                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
-                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <a href="gallery.html" class="main-region-button">
+                                    ԱՆՑՆԵԼ
+                                    ՏԵՍԱԴԱՐԱՆ
+                                    <svg class="main-region-button-arrow">
+                                        <use xlink:href="./Img/sprite.svg#arrow" />
+                                    </svg>
+                                </a>
                             </div>
                             <div class="panel" id="ararat-panel">
-                                <h3 class="region-name">ԱՐԱՐԱՏԻ ՄԱՐԶ</h3>
+                                <h3 class="region-name universal-title">ԱՐԱՐԱՏԻ ՄԱՐԶ</h3>
                                 <h4 class="region-sights"><span>24 </span> պատմամշակութային կոթող</h4>
                                 <div class="region-informations">
                                     <div class="region-information"><img src="./Img/area.png"><span>2704 քկմ</span>
@@ -511,43 +741,119 @@
                                         target="_blank">Վրաստանին</a>, արևելքում՝ <a
                                         href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
                                         target="_blank">Ադրբեջանին</a>։</p>
-                                <swiper-container class="myswiper" centered-slides="true" space-between="20"
-                                    pagination="true" pagination-type="fraction" navigation="true" autoplay-delay="1500"
-                                    autoplay-disable-on-interaction="true" loop="true">
-                                    <swiper-slide>
-                                        <div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2"><img src="./Img/section1img.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/section1img.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                </swiper-container>
-                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
-                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <a href="gallery.html" class="main-region-button">
+                                    ԱՆՑՆԵԼ
+                                    ՏԵՍԱԴԱՐԱՆ
+                                    <svg class="main-region-button-arrow">
+                                        <use xlink:href="./Img/sprite.svg#arrow" />
+                                    </svg>
+                                </a>
                             </div>
                             <div class="panel" id="armavir-panel">
-                                <h3 class="region-name">ԱՐՄԱՎԻՐԻ ՄԱՐԶ</h3>
-                                <h4 class="region-sights"><span>24 </span> պատմամշակութային կոթող</h4>
+                                <h3 class="region-name universal-title">ԱՐՄԱՎԻՐԻ ՄԱՐԶ</h3>
+                                <p class="region-sights"><span>24</span> պատմամշակութային կոթող</p>
                                 <div class="region-informations">
                                     <div class="region-information"><img src="./Img/area.png"><span>2704 քկմ</span>
                                     </div>
@@ -563,39 +869,115 @@
                                         target="_blank">Վրաստանին</a>, արևելքում՝ <a
                                         href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
                                         target="_blank">Ադրբեջանին</a>։</p>
-                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
-                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
-                                    autoplay-delay="1500" autoplay-disable-on-interaction="true" loop="true">
-                                    <swiper-slide>
-                                        <div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2"><img src="./Img/section1img.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/section1img.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                </swiper-container>
-                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
-                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <a href="gallery.html" class="main-region-button">
+                                    ԱՆՑՆԵԼ
+                                    ՏԵՍԱԴԱՐԱՆ
+                                    <svg class="main-region-button-arrow">
+                                        <use xlink:href="./Img/sprite.svg#arrow" />
+                                    </svg>
+                                </a>
                             </div>
                             <div class="panel" id="gexarquniq-panel">
                                 <h3 class="region-name">ԳԵՂԱՐՔՈՒՆԻՔԻ ՄԱՐԶ</h3>
@@ -615,39 +997,115 @@
                                         target="_blank">Վրաստանին</a>, արևելքում՝ <a
                                         href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
                                         target="_blank">Ադրբեջանին</a>։</p>
-                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
-                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
-                                    autoplay-delay="1500" autoplay-disable-on-interaction="true" loop="true">
-                                    <swiper-slide>
-                                        <div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2"><img src="./Img/section1img.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/section1img.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                </swiper-container>
-                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
-                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <a href="gallery.html" class="main-region-button">
+                                    ԱՆՑՆԵԼ
+                                    ՏԵՍԱԴԱՐԱՆ
+                                    <svg class="main-region-button-arrow">
+                                        <use xlink:href="./Img/sprite.svg#arrow" />
+                                    </svg>
+                                </a>
                             </div>
                             <div class="panel" id="yerevan-panel">
                                 <h3 class="region-name">ԵՐԵՎԱՆ</h3>
@@ -667,39 +1125,115 @@
                                         target="_blank">Վրաստանին</a>, արևելքում՝ <a
                                         href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
                                         target="_blank">Ադրբեջանին</a>։</p>
-                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
-                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
-                                    autoplay-delay="1500" autoplay-disable-on-interaction="true" loop="true">
-                                    <swiper-slide>
-                                        <div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2"><img src="./Img/section1img.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/section1img.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                </swiper-container>
-                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
-                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <a href="gallery.html" class="main-region-button">
+                                    ԱՆՑՆԵԼ
+                                    ՏԵՍԱԴԱՐԱՆ
+                                    <svg class="main-region-button-arrow">
+                                        <use xlink:href="./Img/sprite.svg#arrow" />
+                                    </svg>
+                                </a>
                             </div>
                             <div class="panel" id="kotayq-panel">
                                 <h3 class="region-name">ԿՈՏԱՅՔԻ ՄԱՐԶ</h3>
@@ -719,39 +1253,115 @@
                                         target="_blank">Վրաստանին</a>, արևելքում՝ <a
                                         href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
                                         target="_blank">Ադրբեջանին</a>։</p>
-                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
-                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
-                                    autoplay-delay="1500" autoplay-disable-on-interaction="true" loop="true">
-                                    <swiper-slide>
-                                        <div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2"><img src="./Img/section1img.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/section1img.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                </swiper-container>
-                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
-                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <a href="gallery.html" class="main-region-button">
+                                    ԱՆՑՆԵԼ
+                                    ՏԵՍԱԴԱՐԱՆ
+                                    <svg class="main-region-button-arrow">
+                                        <use xlink:href="./Img/sprite.svg#arrow" />
+                                    </svg>
+                                </a>
                             </div>
                             <div class="panel" id="lori-panel">
                                 <h3 class="region-name">ԼՈՌՈՒ ՄԱՐԶ</h3>
@@ -771,39 +1381,115 @@
                                         target="_blank">Վրաստանին</a>, արևելքում՝ <a
                                         href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
                                         target="_blank">Ադրբեջանին</a>։</p>
-                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
-                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
-                                    autoplay-delay="1500" autoplay-disable-on-interaction="true" loop="true">
-                                    <swiper-slide>
-                                        <div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2"><img src="./Img/section1img.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/section1img.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                </swiper-container>
-                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
-                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <a href="gallery.html" class="main-region-button">
+                                    ԱՆՑՆԵԼ
+                                    ՏԵՍԱԴԱՐԱՆ
+                                    <svg class="main-region-button-arrow">
+                                        <use xlink:href="./Img/sprite.svg#arrow" />
+                                    </svg>
+                                </a>
                             </div>
                             <div class="panel" id="shirak-panel">
                                 <h3 class="region-name">ՇԻՐԱԿԻ ՄԱՐԶ</h3>
@@ -823,39 +1509,115 @@
                                         target="_blank">Վրաստանին</a>, արևելքում՝ <a
                                         href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
                                         target="_blank">Ադրբեջանին</a>։</p>
-                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
-                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
-                                    autoplay-delay="1500" autoplay-disable-on-interaction="true" loop="true">
-                                    <swiper-slide>
-                                        <div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2"><img src="./Img/section1img.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/section1img.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                </swiper-container>
-                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
-                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <a href="gallery.html" class="main-region-button">
+                                    ԱՆՑՆԵԼ
+                                    ՏԵՍԱԴԱՐԱՆ
+                                    <svg class="main-region-button-arrow">
+                                        <use xlink:href="./Img/sprite.svg#arrow" />
+                                    </svg>
+                                </a>
                             </div>
                             <div class="panel" id="syuniq-panel">
                                 <h3 class="region-name">ՍՅՈՒՆԻՔԻ ՄԱՐԶ</h3>
@@ -875,39 +1637,115 @@
                                         target="_blank">Վրաստանին</a>, արևելքում՝ <a
                                         href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
                                         target="_blank">Ադրբեջանին</a>։</p>
-                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
-                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
-                                    autoplay-delay="1500" autoplay-disable-on-interaction="true" loop="true">
-                                    <swiper-slide>
-                                        <div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2"><img src="./Img/section1img.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/section1img.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                </swiper-container>
-                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
-                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <a href="gallery.html" class="main-region-button">
+                                    ԱՆՑՆԵԼ
+                                    ՏԵՍԱԴԱՐԱՆ
+                                    <svg class="main-region-button-arrow">
+                                        <use xlink:href="./Img/sprite.svg#arrow" />
+                                    </svg>
+                                </a>
                             </div>
                             <div class="panel" id="tavush-panel">
                                 <h3 class="region-name">ՏԱՎՈՒՇԻ ՄԱՐԶ</h3>
@@ -927,41 +1765,117 @@
                                         target="_blank">Վրաստանին</a>, արևելքում՝ <a
                                         href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
                                         target="_blank">Ադրբեջանին</a>։</p>
-                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
-                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
-                                    autoplay-delay="1500" autoplay-disable-on-interaction="true" loop="true">
-                                    <swiper-slide>
-                                        <div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2"><img src="./Img/section1img.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/section1img.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>><div class="main-slider2"><img src="./Img/nature.png">
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                </swiper-container>
-                                <button class="main-region-button"><a href="#"><span>ԱՆՑՆԵԼ
-                                            ՏԵՍԱԴԱՐԱՆ</span></a></button>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <a href="gallery.html" class="main-region-button">
+                                    ԱՆՑՆԵԼ
+                                    ՏԵՍԱԴԱՐԱՆ
+                                    <svg class="main-region-button-arrow">
+                                        <use xlink:href="./Img/sprite.svg#arrow" />
+                                    </svg>
+                                </a>
                             </div>
-                            <section class="panel" id="vayocdzor-panel">
+                            <div class="panel" id="vayocdzor-panel">
                                 <h3 class="region-name">ՎԱՅՈՑ ՁՈՐԻ ՄԱՐԶ</h3>
                                 <h4 class="region-sights"><span>24 </span> պատմամշակութային կոթող</h4>
                                 <div class="region-informations">
@@ -988,164 +1902,297 @@
                                         href="https://hy.wikipedia.org/wiki/%D4%B1%D5%A4%D6%80%D5%A2%D5%A5%D5%BB%D5%A1%D5%B6"
                                         target="_blank">Ադրբեջանին</a>։
                                 </p>
-
-                                <swiper-container class="myswiper" slides-per-view="3" centered-slides="true"
-                                    space-between="20" pagination="true" pagination-type="fraction" navigation="true"
-                                    autoplay="true" autoplay-delay="1500" autoplay-disable-on-interaction="true"
-                                    loop="true">
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
                                                 <source
                                                     src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
                                                     type="video/mp4">
-                                                Your browser does not support the video tag.
                                             </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <!-- Repeat swiper-slide as necessary -->
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
-                                                <source src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4"
-                                                    type="video/mp4">
-                                                Your browser does not support the video tag.
-                                            </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
-                                        </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
                                                 <source
                                                     src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
                                                     type="video/mp4">
-                                                Your browser does not support the video tag.
                                             </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
-                                                <source src="./video/Հայկական մշակույթը 10-ից 14-րդ դարերում.mp4"
-                                                    type="video/mp4">
-                                                Your browser does not support the video tag.
-                                            </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
-                                        </div>
-                                    </swiper-slide>
-                                    <swiper-slide>
-                                        <div class="main-slider2">
-                                            <video class="main-slider2-video" controls>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
                                                 <source
                                                     src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
                                                     type="video/mp4">
-                                                Your browser does not support the video tag.
                                             </video>
-                                            <h5>Տեսանութի վերնագիրը</h5>
-                                            <p><i class="fa-solid fa-location-dot"></i> Նկարահանման վայրը</p>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
                                         </div>
-                                    </swiper-slide>
-                                </swiper-container>
-
-                                <button class="main-region-button">
-                                    <a href="#"><span>ԱՆՑՆԵԼ ՏԵՍԱԴԱՐԱՆ</span></a>
-                                </button>
-                            </section>
-
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <video class="slider-video" controls>
+                                                <source
+                                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                            <h3 class="slider-title">
+                                                Տեսանութի վերնագիրը
+                                            </h3>
+                                            <p class="slider-text">
+                                                <svg class="slider-arrow">
+                                                    <use xlink:href="./Img/sprite.svg#location" />
+                                                </svg>
+                                                Նկարահանման վայրը
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <a href="gallery.html" class="main-region-button">
+                                    ԱՆՑՆԵԼ
+                                    ՏԵՍԱԴԱՐԱՆ
+                                    <svg class="main-region-button-arrow">
+                                        <use xlink:href="./Img/sprite.svg#arrow" />
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="main-section4">
-            <div class="main-section4container container">
-                <div class="main-section4container-slider">
-                    <span style="--i:1;" class="main-section4container-span"><img src="./Img/reArmenia.jpg"></span>
-                    <span style="--i:2;" class="main-section4container-span"><img src="./Img/reArmenia.jpg"></span>
-                    <span style="--i:3;" class="main-section4container-span"><img src="./Img/reArmenia.jpg"></span>
-                    <span style="--i:4;" class="main-section4container-span"><img src="./Img/reArmenia.jpg"></span>
-                    <span style="--i:5;" class="main-section4container-span"><img src="./Img/reArmenia.jpg"></span>
+                <div class="marquee">
+                    <div class="marquee__item item1">
+                        <img class="marquee__img" src="./Img/reArmenia.jpg" alt="">
+                    </div>
+                    <div class="marquee__item item2">
+                        <img class="marquee__img" src="./Img/reArmenia.jpg" alt="">
+                    </div>
+                    <div class="marquee__item item3">
+                        <img class="marquee__img" src="./Img/reArmenia.jpg" alt="">
+                    </div>
+                    <div class="marquee__item item4">
+                        <img class="marquee__img" src="./Img/reArmenia.jpg" alt="">
+                    </div>
+                    <div class="marquee__item item5">
+                        <img class="marquee__img" src="./Img/reArmenia.jpg" alt="">
+                    </div>
+                    <div class="marquee__item item6">
+                        <img class="marquee__img" src="./Img/reArmenia.jpg" alt="">
+                    </div>
+                    <div class="marquee__item item7">
+                        <img class="marquee__img" src="./Img/reArmenia.jpg" alt="">
+                    </div>
+                    <div class="marquee__item item8">
+                        <img class="marquee__img" src="./Img/reArmenia.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="container-footer container">
+        <div class="container-footer ">
             <div class="footer-content1">
-                <a href="./index.html">
-                    <div class="headerlogo"></div>
+                <a class="logo" href="./index.html">
+                    <svg class="logo-icon">
+                        <use xlink:href="./Img/sprite.svg#Logo" />
+                    </svg>
+                    <strong class="logo-text">ԻՆՔՆՈՒԹՅՈՒՆ</strong>
                 </a>
-                <div class="text footer-text">
-                    <p>Կարճ ինֆո այստեղ։ Eu egestas imperdiet consectetur egestas ante aliquet posuere vitae.</p>
-                </div>
+                <p class="footer-text">Կարճ ինֆո այստեղ։ Eu egestas imperdiet consectetur egestas ante aliquet posuere
+                    vitae.</p>
             </div>
             <div class="footer-content2">
-                <h3 class="footer-title">ՀԻՄՆԱԴՐԱՄ</h3>
-                <ul class="list-reset">
-                    <li class="footer-lists"><a href="#">ՄԵՐ ՄԱՍԻՆ</a></li>
-                    <li class="footer-lists"><a href="#">ԽՆԴԻՐԸ</a></li>
-                    <li class="footer-lists"><a href="#">ՀՈԳԱԲԱՐՁՈՒՆԵՐԻ ԽՈՐՀՈՒՐԴ</li>
-                    <li class="footer-lists"><a href="#">ԹԻՄԸ</a></li>
-                    <li class="footer-lists"><a href="#">ԱՋԱԿԻՑՆԵՐ</a></li>
-                    <li class="footer-lists"><a href="#">ՆԱԽԱԳԻԾ</a></li>
+                <h3 class="footer-title">Հիմնադրամ</h3>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            Մեր մասին
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            Խնդիրը
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            Հոգաբարձուների խորհուրդ
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            Թիմը
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            Աջակիցներ
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="#">
+                            Նախագիծ
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="footer-content2">
                 <h3 class="footer-title">ՏԵՍԱԴԱՐԱՆ</h3>
                 <ul class="list-reset">
-                    <li class="footer-lists"><a href="#">ՃԱՆԱՉԵՆՔ ՀԱՅԱՍՏԱՆԸ</a></li>
-                    <li class="footer-lists"><a href="#">ԱՎԱՆԴՈՒՅԹՆԵՐ</a></li>
-                    <li class="footer-lists"><a href="#">ՊԱՏՄՈՒԹՅՈՒՆՆԵՐ</a></li>
-                    <li class="footer-lists"><a href="#">ԱԶԳԱՅԻՆ ԵՐԳ</a></li>
-                    <li class="footer-lists"><a href="#">ԱԶԳԱՅԻՆ ՊԱՐ</a></li>
+                    <li class="footer-item"><a class="footer-link" href="#">ՃԱՆԱՉԵՆՔ ՀԱՅԱՍՏԱՆԸ</a></li>
+                    <li class="footer-item"><a class="footer-link" href="#">ԱՎԱՆԴՈՒՅԹՆԵՐ</a></li>
+                    <li class="footer-item"><a class="footer-link" href="#">ՊԱՏՄՈՒԹՅՈՒՆՆԵՐ</a></li>
+                    <li class="footer-item"><a class="footer-link" href="#">ԱԶԳԱՅԻՆ ԵՐԳ</a></li>
+                    <li class="footer-item"><a class="footer-link" href="#">ԱԶԳԱՅԻՆ ՊԱՐ</a></li>
                 </ul>
             </div>
             <div class="footer-content2">
                 <h3 class="footer-title">ԿԱՊ</h3>
-                <ul class="list-reset list-reset-button">
-                    <a href="tel:+374-00-00-00" class="button  phone">+374-00-00-00</a>
-                    <a href="mailto:gagikidentity@gmail.com" class="button  email">gagikidentity@gmail.com</a>
-                    <a href="#" class="button  location">RA, Yerevan, Road 00</a>
-                    <div class="footer-icons">
-                        <div class="social-icons"><a href="https://x.com/?lang=ru" target="_blank"><i
-                                    class="fa-brands fa-x-twitter"></i></a></div>
-                        <div class="social-icons"><a href="https://www.instagram.com/" target="_blank"><i
-                                    class="fa-brands fa-instagram"></i></i></a></div>
-                        <div class="social-icons"><a href="https://www.facebook.com/identity.armenia/?_rdr"
-                                target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
-                        <div class="social-icons"><a
-                                href="https://www.linkedin.com/login/ru?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"
-                                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
-                    </div>
+                <ul class="footer-contact-list">
+                    <li class="footer-contact-item">
+                        <a class="footer-contact-link" href="tel:+374-00-00-00">
+                            <svg class="footer-contact-icon">
+                                <use xlink:href="./Img/sprite.svg#phone" />
+                            </svg>
+                            +374 00 000-000
+                        </a>
+                    </li>
+                    <li class="footer-contact-item">
+                        <a class="footer-contact-link" href="mailto:z5C5o@example.com">
+                            <svg class="footer-contact-icon">
+                                <use xlink:href="./Img/sprite.svg#email" />
+                            </svg>
+                            gagikidentity@gmail.com
+                        </a>
+                    </li>
+                    <li class="footer-contact-item">
+                        <a class="footer-contact-link" href="#">
+                            <svg class="footer-contact-icon">
+                                <use xlink:href="./Img/sprite.svg#location" />
+                            </svg>
+                            RA, Yerevan, Road 00
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer-socials-list">
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#" target="_blank">
+                            <svg class="footer-socials-icon">
+                                <use xlink:href="./Img/sprite.svg#twitter" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#" target="_blank">
+                            <svg class="footer-socials-icon">
+                                <use xlink:href="./Img/sprite.svg#instagram" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#" target="_blank">
+                            <svg class="footer-socials-icon">
+                                <use xlink:href="./Img/sprite.svg#facebook" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#" target="_blank">
+                            <svg class="footer-socials-icon">
+                                <use xlink:href="./Img/sprite.svg#linkedin" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#" target="_blank">
+                            <svg class="footer-socials-icon">
+                                <use xlink:href="./Img/sprite.svg#youtube" />
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
             <div class="footer-content2">
                 <h3 class="footer-title">ԲԱԺԱՆԱՐԴԱԳՐՈՒԹՅՈՒՆ</h3>
-                <ul class="list-reset ">
-                    <p>Ստացեք հիմնադրամի նորությունները և նախագծի կարևոր թարմացումներն էլ-փոստով</p>
-                    <form action="https://api.web3forms.com/submit" method="POST" class="footerform">
-                        <input type="hidden" name="access_key" value="53a3c34a-18a5-4ba3-9c27-eef8b72864af">
-                        <input type="email" name="email" placeholder="էլ-փոստ" class="emailinput" required>
-                        <button type="submit" class="subscribe-button">ԲԱԺԱՆՈՐԴԱԳՐՎԵԼ</button>
-                    </form>
-                </ul>
+                <p class="footer-text">
+                    Ստացեք հիմնադրամի նորությունները և նախագծի կարևոր թարմացումներն էլ-փոստով
+                </p>
+                <form class="footer-form" action="#" enctype="multipart/form-data" method="post">
+                    <label class="footer-form-label">
+                        <svg class="footer-form-icon">
+                            <use xlink:href="./Img/sprite.svg#email" />
+                        </svg>
+                        <input class="footer-form-input" type="email" placeholder="էլ-փոստ" required>
+                    </label>
+                    <button class="footer-form-button" type="submit">
+                        Բաժանորդագրվել
+                    </button>
+                </form>
             </div>
         </div>
-        <hr>
-        <div class="container-deepfooter container">
+        <div class="container-deepfooter">
             <p>© «Ինքնություն», Հիմնադրամ <span class="copyright" id="copyright"></span></p>
         </div>
     </footer>
 
     <script src="./swiper.js"></script>
+    <script src="./slider.js"></script>
     <script src="./script.js"></script>
     <script src="./videotube/videotube.min.js"></script>
 
