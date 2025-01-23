@@ -32,11 +32,11 @@
                                     <i class="fa-solid fa-angle-down down"></i></a>
                             </div>
                             <ul class="videolibrary-content list-reset" id="videolibrary-content">
-                                <li><a href="gallery.html" class="videolibrary-services">ՃԱՆԱՉԵՆՔ ՀԱՅԱՍՏԱՆԸ</a></li>
-                                <li><a href="gallery.html" class="videolibrary-services">ԱՎԱՆԴՈՒՅԹՆԵՐ</a></li>
-                                <li><a href="gallery.html" class="videolibrary-services">ՊԱՏՄՈՒԹՅՈՒՆՆԵՐ</a></li>
-                                <li><a href="gallery.html" class="videolibrary-services">ԱԶԳԱՅԻՆ ԵՐԳ</a></li>
-                                <li><a href="gallery.html" class="videolibrary-services">ԱԶԳԱՅԻՆ ՊԱՐ</a></li>
+                                <li><a href="./gallery.html" class="videolibrary-services">ՃԱՆԱՉԵՆՔ ՀԱՅԱՍՏԱՆԸ</a></li>
+                                <li><a href="./gallery.html" class="videolibrary-services">ԱՎԱՆԴՈՒՅԹՆԵՐ</a></li>
+                                <li><a href="./gallery.html" class="videolibrary-services">ՊԱՏՄՈՒԹՅՈՒՆՆԵՐ</a></li>
+                                <li><a href="./gallery.html" class="videolibrary-services">ԱԶԳԱՅԻՆ ԵՐԳ</a></li>
+                                <li><a href="./gallery.html" class="videolibrary-services">ԱԶԳԱՅԻՆ ՊԱՐ</a></li>
                             </ul>
                         </div>
                     </li>
@@ -50,24 +50,39 @@
                     <li>
                         <div class="menu-link-hover">
                             <div class="language" onclick="myLanguageFunction()">
-                                <a href="#" class="menu-link menu-link-language"><i class="fa-solid fa-globe"></i>
-                                    <i class="fa-solid fa-angle-down down"></i></a>
+                                <a href="#" class="menu-link menu-link-language">
+                                    <svg class="menu-language-icon">
+                                        <use xlink:href="./Img/sprite.svg#language" />
+                                    </svg>
+                                </a>
                             </div>
                             <ul class="language-content list-reset" id="language-content">
-                                <li><a href="#" class="language-services">
-                                        <div class="flag-armenia"></div>
-                                    </a></li>
-                                <li><a href="#" class="language-services">
-                                        <div class="flag-usa"></div>
-                                    </a></li>
-                                <li><a href="#" class="language-services">
-                                        <div class="flag-russia"></div>
-                                    </a></li>
+                                <li>
+                                    <a href="#" class="language-services">
+                                        <svg class="language-icon">
+                                            <use xlink:href="./Img/sprite.svg#english" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="language-services">
+                                        <svg class="language-icon">
+                                            <use xlink:href="./Img/sprite.svg#russia" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="language-services">
+                                        <svg class="language-icon">
+                                            <use xlink:href="./Img/sprite.svg#armenia" />
+                                        </svg>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </li>
                     <li>
-                        <a href="donation.html" class="button-header">
+                        <a href="./donation.html" class="button-header">
                             ՆՎԻՐԱԲԵՐԵԼ
                         </a>
                     </li>

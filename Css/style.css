@@ -266,28 +266,10 @@ a {
   border-bottom: 1.5px solid #781214;
 }
 
-.flag-armenia {
-  background-image: url(../Img/armenia.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 25px;
-  height: 20px;
-}
 
-.flag-usa {
-  background-image: url(../Img/united-states-of-america.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 25px;
-  height: 20px;
-}
-
-.flag-russia {
-  background-image: url(../Img/russia.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 25px;
-  height: 20px;
+.language-icon {
+  width: 1.269rem;
+  height: 1.269rem;
 }
 
 /*************************header***************/
@@ -323,6 +305,12 @@ header {
     }
   }
 
+  & .menu-language-icon {
+    width: 1.269rem;
+    height: 1.269rem;
+    fill: #fff;
+  }
+
   & .burger span {
     background-color: #fff;
     transition: background-color 0.5s ease;
@@ -352,9 +340,16 @@ header {
     }
   }
 
-  & .menu-link i {
+  & .menu-link::after {
+    content: "\203A";
+    display: none;
+    font-size: 2rem;
     color: #fff;
-    transition: color 0.5s ease;
+    transform: rotate(90deg);
+
+    @media(min-width:768px){
+      display: block;
+    }
   }
 
   &.header__scroll {
@@ -363,6 +358,11 @@ header {
 
 
     & .logo-icon {
+      fill: #781214;
+    }
+
+
+    & .menu-language-icon {
       fill: #781214;
     }
 
@@ -383,7 +383,7 @@ header {
       color: #781214;
     }
 
-    & .menu-link i {
+    & .menu-link::after {
       color: #781214;
     }
   }
@@ -458,8 +458,9 @@ header {
 }
 
 .menu-link {
-  font-size: 18px;
-  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .videolibrary-content,
@@ -508,6 +509,37 @@ header {
 #tranding {
   padding: 4rem 0;
 }
+
+
+.slider {
+  background: #a6a6a6;
+  height: 300px;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 250px;
+  height: 175px;
+  background-color: #fff;
+  border: 3px solid #000;
+  text-align: center;
+  line-height: 175px;
+  transition: left 0.5s, top 0.5s, scale 0.5s, opacity 0.5s;
+
+}
+
+.slider-navigation {}
+
+.action-previous {}
+
+.action-next {}
 
 
 
@@ -1680,6 +1712,7 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-block-end: 35px;
+  font-family: "Arm-Hmks-Bebas-Neue-Regular";
 }
 
 .fund-logo {
@@ -1786,13 +1819,13 @@ footer {
 
 .fund-logo-text {
   color: #781214;
-  font-size: 25px;
+  font-weight: 400;
+  font-size: 40px;
 }
 
 .fund-logo-span {
   color: #781214;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 20px;
 }
 
 .fund-text {
@@ -2217,7 +2250,7 @@ footer {
     left: 5px;
     padding-inline-start: 10px;
     z-index: -1;
-    color: #F2F2F2;
+    color: #d7d4d4;
     font-size: 100px;
     font-weight: 700;
   }

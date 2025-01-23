@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ԻՆՔՆՈՒԹՅՈՒՆ</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="./Css/style.css">
     <link rel="stylesheet" href="./videotube/videotube.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./Css/swiper.css">
     <link rel="stylesheet" href="./Css/slider.css">
 
@@ -33,11 +31,11 @@
                                     <i class="fa-solid fa-angle-down down"></i></a>
                             </div>
                             <ul class="videolibrary-content list-reset" id="videolibrary-content">
-                                <li><a href="gallery.html" class="videolibrary-services">ՃԱՆԱՉԵՆՔ ՀԱՅԱՍՏԱՆԸ</a></li>
-                                <li><a href="gallery.html" class="videolibrary-services">ԱՎԱՆԴՈՒՅԹՆԵՐ</a></li>
-                                <li><a href="gallery.html" class="videolibrary-services">ՊԱՏՄՈՒԹՅՈՒՆՆԵՐ</a></li>
-                                <li><a href="gallery.html" class="videolibrary-services">ԱԶԳԱՅԻՆ ԵՐԳ</a></li>
-                                <li><a href="gallery.html" class="videolibrary-services">ԱԶԳԱՅԻՆ ՊԱՐ</a></li>
+                                <li><a href="./gallery.html" class="videolibrary-services">ՃԱՆԱՉԵՆՔ ՀԱՅԱՍՏԱՆԸ</a></li>
+                                <li><a href="./gallery.html" class="videolibrary-services">ԱՎԱՆԴՈՒՅԹՆԵՐ</a></li>
+                                <li><a href="./gallery.html" class="videolibrary-services">ՊԱՏՄՈՒԹՅՈՒՆՆԵՐ</a></li>
+                                <li><a href="./gallery.html" class="videolibrary-services">ԱԶԳԱՅԻՆ ԵՐԳ</a></li>
+                                <li><a href="./gallery.html" class="videolibrary-services">ԱԶԳԱՅԻՆ ՊԱՐ</a></li>
                             </ul>
                         </div>
                     </li>
@@ -51,24 +49,39 @@
                     <li>
                         <div class="menu-link-hover">
                             <div class="language" onclick="myLanguageFunction()">
-                                <a href="#" class="menu-link menu-link-language"><i class="fa-solid fa-globe"></i>
-                                    <i class="fa-solid fa-angle-down down"></i></a>
+                                <a href="#" class="menu-link menu-link-language">
+                                    <svg class="menu-language-icon">
+                                        <use xlink:href="./Img/sprite.svg#language" />
+                                    </svg>
+                                </a>
                             </div>
                             <ul class="language-content list-reset" id="language-content">
-                                <li><a href="#" class="language-services">
-                                        <div class="flag-armenia"></div>
-                                    </a></li>
-                                <li><a href="#" class="language-services">
-                                        <div class="flag-usa"></div>
-                                    </a></li>
-                                <li><a href="#" class="language-services">
-                                        <div class="flag-russia"></div>
-                                    </a></li>
+                                <li>
+                                    <a href="#" class="language-services">
+                                        <svg class="language-icon">
+                                            <use xlink:href="./Img/sprite.svg#english" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="language-services">
+                                        <svg class="language-icon">
+                                            <use xlink:href="./Img/sprite.svg#russia" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="language-services">
+                                        <svg class="language-icon">
+                                            <use xlink:href="./Img/sprite.svg#armenia" />
+                                        </svg>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </li>
                     <li>
-                        <a href="donation.html" class="button-header">
+                        <a href="./donation.html" class="button-header">
                             ՆՎԻՐԱԲԵՐԵԼ
                         </a>
                     </li>
@@ -134,28 +147,44 @@
         <section class="main-section2">
             <div class="main-section2container container">
                 <h2 class="main-section2title universal-title">ԱՄԵՆԱՇԱՏ ԴԻՏՎԱԾ</h2>
-                <div class="slider-container">
-                    <div class="slider-content">
-                        <div class="slider-single">
-                            <img class="slider-single-image" src="https://picsum.photos/id/973/200/300" alt="1" />
+                <div class="slider">
+                    <div class="slider-container">
+                        <div class="slide">
+                            IMAGE#1
                         </div>
-                        <div class="slider-single">
-                            <img class="slider-single-image" src="https://picsum.photos/id/974/200/300" alt="2" />
+                        <div class="slide">
+                            IMAGE#2
                         </div>
-                        <div class="slider-single">
-                            <img class="slider-single-image" src="https://picsum.photos/id/975/200/300" alt="3" />
+                        <div class="slide">
+                            IMAGE#3
                         </div>
-                        <div class="slider-single">
-                            <img class="slider-single-image" src="https://picsum.photos/id/976/200/300" alt="4" />
+                        <div class="slide">
+                            IMAGE#4
                         </div>
-                        <div class="slider-single">
-                            <img class="slider-single-image" src="https://picsum.photos/id/977/200/300" alt="5" />
+                        <div class="slide">
+                            IMAGE#5
                         </div>
-                        <div class="slider-single">
-                            <img class="slider-single-image" src="https://picsum.photos/id/978/200/300" alt="6" />
+                        <div class="slide">
+                            IMAGE#6
+                        </div>
+                        <div class="slide">
+                            IMAGE#7
+                        </div>
+                        <div class="slide">
+                            IMAGE#8
+                        </div>
+                        <div class="slide">
+                            IMAGE#9
+                        </div>
+                        <div class="slide">
+                            IMAGE#10
                         </div>
                     </div>
                 </div>
+                <a href="#" class="slider-navigation action-prev" data-dir="prev">prev
+                </a>
+                <a href="#" class="slider-navigation action-next" data-dir="next">next
+                </a>
             </div>
 
         </section>
@@ -2193,8 +2222,8 @@
 
     <script src="./swiper.js"></script>
     <script src="./slider.js"></script>
-    <script src="./script.js"></script>
     <script src="./videotube/videotube.min.js"></script>
+    <script src="./script.js"></script>
 
 </body>
 
