@@ -275,7 +275,6 @@ a {
 /*************************header***************/
 
 header {
-  background: #fff;
   position: fixed;
   display: flex;
   justify-items: center;
@@ -288,6 +287,7 @@ header {
     box-shadow 0.5s;
 
   & .logo-icon {
+    z-index: 11;
     fill: #fff;
   }
 
@@ -353,7 +353,7 @@ header {
   }
 
   &.header__scroll {
-    background: #fff;
+    background-color: #fff;
     box-shadow: 0rem 0.125rem 0.5rem 0rem rgba(0, 0, 0, 0.16);
 
 
@@ -511,29 +511,25 @@ header {
 }
 
 
-.slider {
-  background: #a6a6a6;
-  height: 300px;
+.slider-ellipse {
+  height: 570px;
 }
 
-.slider-container {
+.slider-ellipse__container {
   position: relative;
+
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-.slide {
+.slider-ellipse__slide {
   position: absolute;
   width: 250px;
-  height: 175px;
-  background-color: #fff;
-  border: 3px solid #000;
-  text-align: center;
-  line-height: 175px;
+  height: 150px;
   transition: left 0.5s, top 0.5s, scale 0.5s, opacity 0.5s;
-
 }
+
 
 .slider-navigation {}
 
@@ -733,6 +729,8 @@ footer {
 /*****************main*************/
 
 .main-section1 {
+  position: relative;
+  isolation: isolate;
   min-height: 650px;
   background-size: cover;
   background-position: 60% center;
@@ -742,6 +740,18 @@ footer {
 
   @media(min-width:768px) {
     background-position: center;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 900px 900px / 200px;
   }
 }
 
@@ -2493,9 +2503,7 @@ footer {
   }
 }
 
-.hero__title {
-  
-}
+.hero__title {}
 
 .hero__links {
   display: flex;

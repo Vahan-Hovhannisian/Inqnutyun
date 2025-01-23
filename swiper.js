@@ -1,12 +1,42 @@
-const slider = document.querySelector(".slider");
-const sliderContainer = document.querySelector(".slider-container");
-const slides = document.querySelectorAll(".slide");
+const slider = document.querySelector(".slider-ellipse");
+const sliderContainer = document.querySelector(".slider-ellipse__container");
+const slides = document.querySelectorAll(".slider-ellipse__slide");
 const sliderNavigations = document.querySelectorAll(".slider-navigation");
 const actionPrevious = document.querySelector(".action-prev");
 const actionNext = document.querySelector(".action-next");
 
 let activeOrder = 0;
+// Обработчики свайпа
+let touchStartX = 0;
+let touchEndX = 0;
 
+sliderContainer.addEventListener("touchstart", (e) => {
+    touchStartX = e.touches[0].clientX;
+});
+
+sliderContainer.addEventListener("touchmove", (e) => {
+    touchEndX = e.touches[0].clientX;
+});
+
+sliderContainer.addEventListener("touchend", () => {
+    handleSwipe();
+});
+
+function handleSwipe() {
+    const swipeThreshold = 50; // Минимальное расстояние для срабатывания свайпа
+    const swipeDistance = touchEndX - touchStartX;
+
+    if (Math.abs(swipeDistance) > swipeThreshold) {
+        if (swipeDistance > 0) {
+            // Свайп вправо (предыдущий слайд)
+            activeOrder = Math.max(0, activeOrder - 1);
+        } else {
+            // Свайп влево (следующий слайд)
+            activeOrder = Math.min(slides.length - 1, activeOrder + 1);
+        }
+        update(); // Обновляем слайдер
+    }
+}
 init();
 
 function init() {
@@ -74,4 +104,4 @@ function navigationHandler(e) {
     update();
 }
 
-//window.addEventListener("resize", update);
+window.addEventListener("resize", update);
