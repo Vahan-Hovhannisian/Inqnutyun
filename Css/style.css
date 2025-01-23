@@ -347,7 +347,7 @@ header {
     color: #fff;
     transform: rotate(90deg);
 
-    @media(min-width:768px){
+    @media(min-width:768px) {
       display: block;
     }
   }
@@ -434,7 +434,7 @@ header {
 
 .universal-title {
   font-family: "Arm-Hmks-Bebas-Neue-Regular";
-  font-size: clamp(2.5rem, 5vw, 3rem);
+  font-size: clamp(2.6rem, 5vw, 3rem);
   font-weight: 400;
   line-height: 100%;
   color: #781214;
@@ -1596,7 +1596,16 @@ footer {
   padding: 200px 0 20px;
 }
 
+.fund-section1container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 
+  @media(min-width:768px) {
+    align-items: flex-start;
+  }
+}
 
 .fund {
   padding: 20px 0 40px;
@@ -2485,10 +2494,7 @@ footer {
 }
 
 .hero__title {
-  color: #FFF;
-  font-size: clamp(25px, 5vw, 65px);
-  font-weight: 700;
-  line-height: 100%;
+  
 }
 
 .hero__links {
@@ -2846,7 +2852,7 @@ footer {
 .Pagination__arrow-btn {
   padding: 8px;
   border-radius: 8px;
-  border: 1px solid #781214;
+  border: 2px solid #781214;
   transition: background-color 0.5s;
 
   &:hover {
@@ -2854,15 +2860,26 @@ footer {
     background-color: #781214;
   }
 
-  &:hover i {
-    color: #fff;
-    transition: color 0.5s;
+  &:hover svg {
+    fill: #fff;
+    transition: fill 0.5s;
   }
 }
 
 .Pagination__arrow {
-  width: 32px;
-  height: 32px;
+  width: 15px;
+  height: 10px;
+  fill: #781214;
+  vertical-align: middle;
+}
+
+.Pagination__arrow_left {
+  transform: rotate(90deg);
+}
+
+
+.Pagination__arrow_right {
+  transform: rotate(-90deg);
 }
 
 .Pagination__list {
@@ -2876,7 +2893,8 @@ footer {
   height: 32px;
   padding: 8px;
   border-radius: 8px;
-  border: 1px solid #781214;
+  font-family: "Montserrat";
+  border: 2px solid #781214;
   color: #781214;
   font-weight: 500;
   transition: background-color 0.5s, color 0.5s;
