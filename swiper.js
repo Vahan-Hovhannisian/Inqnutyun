@@ -4,6 +4,7 @@ const slides = document.querySelectorAll(".slider-ellipse__slide");
 const sliderNavigations = document.querySelectorAll(".slider-navigation");
 const actionPrevious = document.querySelector(".action-prev");
 const actionNext = document.querySelector(".action-next");
+const sliderPagination = document.querySelector(".slider-ellipse__pagination");
 
 let activeOrder = 0;
 // Обработчики свайпа
@@ -11,97 +12,151 @@ let touchStartX = 0;
 let touchEndX = 0;
 
 sliderContainer.addEventListener("touchstart", (e) => {
-    touchStartX = e.touches[0].clientX;
+  touchStartX = e.touches[0].clientX;
 });
 
 sliderContainer.addEventListener("touchmove", (e) => {
-    touchEndX = e.touches[0].clientX;
+  touchEndX = e.touches[0].clientX;
 });
 
 sliderContainer.addEventListener("touchend", () => {
-    handleSwipe();
+  handleSwipe();
 });
 
 function handleSwipe() {
-    const swipeThreshold = 50; // Минимальное расстояние для срабатывания свайпа
-    const swipeDistance = touchEndX - touchStartX;
+  const swipeThreshold = 50; // Минимальное расстояние для срабатывания свайпа
+  const swipeDistance = touchEndX - touchStartX;
 
-    if (Math.abs(swipeDistance) > swipeThreshold) {
-        if (swipeDistance > 0) {
-            // Свайп вправо (предыдущий слайд)
-            activeOrder = Math.max(0, activeOrder - 1);
-        } else {
-            // Свайп влево (следующий слайд)
-            activeOrder = Math.min(slides.length - 1, activeOrder + 1);
-        }
-        update(); // Обновляем слайдер
+  if (Math.abs(swipeDistance) > swipeThreshold) {
+    if (swipeDistance > 0) {
+      // Свайп вправо (предыдущий слайд)
+      activeOrder = Math.max(0, activeOrder - 1);
+    } else {
+      // Свайп влево (следующий слайд)
+      activeOrder = Math.min(slides.length - 1, activeOrder + 1);
     }
+    update(); // Обновляем слайдер
+  }
 }
 init();
 
 function init() {
-    for (let i = 0; i < slides.length; i++) {
-        const slide = slides[i];
-        slide.dataset.order = i;
-        slide.style.transform = `translate(-50%, -50%)`;
-        slide.addEventListener("click", clickHandler);
-    }
-    for (const navigation of sliderNavigations) {
-        navigation.addEventListener("click", navigationHandler);
-    }
+  for (let i = 0; i < slides.length; i++) {
+    const slide = slides[i];
+    slide.dataset.order = i;
+    //slide.style.transform = `translate(-50%, -50%)`;
+    slide.addEventListener("click", clickHandler);
+    const paginationButton = document.createElement("button");
+    paginationButton.classList.add("slider-ellipse__pagination-button");
+    paginationButton.dataset.paginationOrder = i;
+    sliderPagination.appendChild(paginationButton);
+  }
+  for (const navigation of sliderNavigations) {
+    navigation.addEventListener("click", navigationHandler);
+  }
 
-    activeOrder = Math.floor(slides.length / 2);
+  activeOrder = Math.floor(slides.length / 2);
 
-    update();
+  update();
 }
 
 function update() {
-    const { width, height } = sliderContainer.getBoundingClientRect();
-    //const slideRect = slides[0].getBoundingClientRect();
-    const a = width / 2;
-    const b = height / 2;
+  const { width, height } = sliderContainer.getBoundingClientRect();
+  //const slideRect = slides[0].getBoundingClientRect();
+  const a = width / 2;
+  const b = height / 2;
 
-    const delta = Math.PI / slides.length / 4;
+  const delta = Math.PI / slides.length / 2;
 
-    for (let i = 0; i < slides.length; i++) {
-        const leftSlide = document.querySelector(
-            `[data-order="${activeOrder - i}"]`,
-        );
-        if (leftSlide) {
-            leftSlide.style.zIndex = slides.length - i;
-            leftSlide.style.opacity = 1 - (4 * i) / slides.length;
-            leftSlide.style.left = `${width / 2 + a * Math.cos((Math.PI * 3) / 2 - delta * i * 3)}px`;
-            leftSlide.style.top = `${-b * Math.sin((Math.PI * 3) / 2 - delta * i * 2)}px`;
-            leftSlide.style.scale = 1 - (1 * i) / slides.length;
-        }
-        const rightSlide = document.querySelector(
-            `[data-order="${activeOrder + i}"]`,
-        );
-        if (rightSlide) {
-            rightSlide.style.zIndex = slides.length - i;
-            rightSlide.style.opacity = 1 - (4 * i) / slides.length;
-            rightSlide.style.left = `${width / 2 + a * Math.cos((Math.PI * 3) / 2 + delta * i * 2)}px`;
-            rightSlide.style.top = `${-b * Math.sin((Math.PI * 3) / 2 + delta * i * 2)}px`;
-            rightSlide.style.scale = 1 - (1 * i) / slides.length;
-        }
+  for (let i = 0; i < slides.length; i++) {
+    const leftSlide = document.querySelector(
+      `[data-order="${activeOrder - i}"]`,
+    );
+    const leftPaginationButton = document.querySelector(
+      `[data-pagination-order="${activeOrder - i}"]`,
+    );
+    if (leftSlide) {
+      leftSlide.style.zIndex = slides.length - i;
+      leftSlide.style.opacity = 1 - (4 * i) / slides.length;
+      leftSlide.style.left = `${width / 2 + a * Math.cos((Math.PI * 3) / 2 - delta * i * 1.7)}px`;
+      leftSlide.style.top = `${-b * Math.sin((Math.PI * 3) / 2)}px`;
+      leftSlide.style.transform = `translate(-50%, -50%) scale(${1 - (1 * i) / slides.length})`;
+      leftPaginationButton.style.transform = `scale(${1 - (1 * i) / slides.length + 0.2})`;
+      //leftSlide.style.height = 570 - (570 * i) / slides.length + "px";
+      //leftSlide.style.maxWidth = 1120 - (1120 * i) / slides.length + "px";
     }
+    const rightSlide = document.querySelector(
+      `[data-order="${activeOrder + i}"]`,
+    );
+    const rightPaginationButton = document.querySelector(
+      `[data-pagination-order="${activeOrder + i}"]`,
+    );
+    if (rightSlide) {
+      rightSlide.style.zIndex = slides.length - i;
+      rightSlide.style.opacity = 1 - (4 * i) / slides.length;
+      rightSlide.style.left = `${width / 2 + a * Math.cos((Math.PI * 3) / 2 + delta * i * 1.7)}px`;
+      rightSlide.style.top = `${-b * Math.sin((Math.PI * 3) / 2)}px`;
+      rightSlide.style.transform = `translate(-50%, -50%) scale(${1 - (1 * i) / slides.length})`;
+      rightPaginationButton.style.transform = `scale(${1 - (1 * i) / slides.length + 0.2})`;
+      //rightSlide.style.height = 570 - (570 * i) / slides.length + "px";
+      //rightSlide.style.maxWidth = 1120 - (1120 * i) / slides.length + "px";
+    }
+
+    if (leftSlide && window.innerWidth < 768) {
+      leftSlide.style.opacity = 1 - (6 * i) / slides.length;
+      leftSlide.style.left = `${width / 2 + a * Math.cos((Math.PI * 3) / 2 - delta * i * 2)}px`;
+    }
+    if (rightSlide && window.innerWidth < 768) {
+      rightSlide.style.opacity = 1 - (6 * i) / slides.length;
+      rightSlide.style.left = `${width / 2 + a * Math.cos((Math.PI * 3) / 2 + delta * i * 2)}px`;
+    }
+  }
 }
 
 function clickHandler() {
-    activeOrder = parseInt(this.dataset.order, 10);
-    update();
+  activeOrder = parseInt(this.dataset.order, 10);
+  update();
 }
 
 function navigationHandler(e) {
-    e.preventDefault();
-    const { dir } = this.dataset;
+  e.preventDefault();
+  const { dir } = this.dataset;
 
-    if (dir === "prev") {
-        activeOrder = Math.max(0, activeOrder - 1);
-    } else if (dir === "next") {
-        activeOrder = Math.min(slides.length - 1, activeOrder + 1);
-    }
-    update();
+  if (dir === "prev") {
+    activeOrder = Math.max(0, activeOrder - 1);
+  } else if (dir === "next") {
+    activeOrder = Math.min(slides.length - 1, activeOrder + 1);
+  }
+  update();
 }
 
 window.addEventListener("resize", update);
+
+function setPagination() {
+  slides.forEach((slide) => {
+    const paginationButton = document.querySelector(
+      `[data-pagination-order="${slide.dataset.order}"]`,
+    );
+    if (paginationButton) {
+      paginationButton.classList.remove(
+        "slider-ellipse__pagination-button_active",
+      );
+    }
+    if (slide.dataset.order === activeOrder.toString()) {
+      paginationButton.classList.add(
+        "slider-ellipse__pagination-button_active",
+      );
+    }
+  });
+
+  document
+    .querySelectorAll(".slider-ellipse__pagination-button")
+    .forEach((button) => {
+      button.addEventListener("click", () => {
+        activeOrder = parseInt(button.dataset.paginationOrder, 10);
+        update();
+      });
+    });
+}
+
+setPagination();
